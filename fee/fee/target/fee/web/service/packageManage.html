@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+
+</head>
+<body>
+	<div class="jfxtTab">
+	  <div class="bills">
+		<section id="packageContent"></section>
+	   </div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/datagrid.min.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<script type="text/javascript">
+	(function($) {
+
+	var loadSuccess = function(){
+ 		//填充修改套餐界面编辑前的值
+ 		   if(editId && editObj){
+ 			  $.ajax({
+					type: 'post',
+					async: false,
+					//contentType: 'application/json',
+					dataType: 'json',
+					url: '../../service/getServicePackItemsPrices',
+					data: {id:editObj.packId},
+					success: function(data) {
+						if (data) {
+                           var pack=data;
+                           pack=data.pack;
+                           var packPrices=data.packPrices;
+                           //debugger;
+                           $("#packId",$("#package_modify")).val(pack.packId);
+                           $("#inputCode",$("#package_modify")).val(pack.packCode);
+         				  $("#inputName",$("#package_modify")).val(pack.name);
+         				  $("#selectFlag",$("#package_modify")).val(pack.flag);
+         				  $("#inputRemark",$("#package_modify")).val(pack.remark);
+         				  $("#inputPrice",$("#package_modify")).val(pack.price);
+         				  $("#inputIsmain",$("#package_modify")).val(pack.ismain);
+         				  
+         				  var i=0;
+         				  $.each(packPrices,function(k,v){
+         					  i=v.custType-1;
+         					 $("#inputMonth"+i,$("#package_modify")).val(v.monthPrice);
+         					 $("#inputYear"+i,$("#package_modify")).val(v.yearPrice);
+         					 $("#inputYears"+i,$("#package_modify")).val(v.years);
+         					 $("#inputGift_months"+i,$("#package_modify")).val(v.giftMonths);
+         				  });
+         				  
+						}
+					},
+					error: function(res, error) {
+						alert(res.responseText);
+					}
+				});
+				   
+				   
+ 		   }
+
+ 		  editId=null;
+ 		  editObj=null;
+ 		  
+ 	   }
+
+	var loadSuccess1 = function(){
+ 		//填充查看套餐编辑前的值
+ 		   if(editId && editObj){
+ 			  $.ajax({
+					type: 'post',
+					async: false,
+					//contentType: 'application/json',
+					dataType: 'json',
+					url: '../../service/getServicePackItemsPrices',
+					data: {id:editObj.packId},
+					success: function(data) {
+						if (data) {
+                           var pack=data;
+                           pack=data.pack;
+                           var packPrices=data.packPrices;
+                           //debugger;
+                           $("#packId",$("#package_view")).val(pack.packId);
+                           $("#inputCode",$("#package_view")).val(pack.packCode);
+         				  $("#inputName",$("#package_view")).val(pack.name);
+         				  $("#selectFlag",$("#package_view")).val(pack.flag);
+         				  $("#inputRemark",$("#package_view")).val(pack.remark);
+         				  $("#inputPrice",$("#package_view")).val(pack.price);
+         				  $("#inputIsmain",$("#package_view")).val(pack.ismain);
+         				  
+         				  var i=0;
+         				  $.each(packPrices,function(k,v){
+         					  i=v.custType-1;
+         					 $("#inputMonth"+i,$("#package_view")).val(v.monthPrice);
+         					 $("#inputYear"+i,$("#package_view")).val(v.yearPrice);
+         					 $("#inputYears"+i,$("#package_view")).val(v.years);
+         					 $("#inputGift_months"+i,$("#package_view")).val(v.giftMonths);
+         				  });
+         				  
+						}
+					},
+					error: function(res, error) {
+						alert(res.responseText);
+					}
+				});
+				   
+				   
+ 		   }
+
+ 		  editId=null;
+ 		  editObj=null;
+ 		  
+ 	   }
+
+
+	var winClose1 = function() {//关闭添加套餐
+		$(document).sgWindow('close', {
+			id: 'add_package'
+		});
+	}
+
+	var winClose2 = function() {//关闭查看套餐
+		$(document).sgWindow('close', {
+			id: 'view_package'
+		});
+	}	
+
+    var winClose3 = function() {//修改套餐
+		$(document).sgWindow('close', {
+			id : 'modify_package'
+		});
+	}
+
+	var savebill = function() {
+		//保存添加套餐
+		var params = {};
+		var url = '../../service/addServicePackItemPrice';
+
+		params.packCode = $('#inputCode', '#package_add').val();
+		params.name = $('#inputName', '#package_add').val();
+		params.ismain = $('#inputIsmain', '#package_add').val();
+		params.price = $('#inputPrice', '#package_add').val();
+		params.flag = $('#selectFlag', '#package_add').val();
+		params.remark = $('#inputRemark', '#package_add').val();
+		
+		var packprices=[];
+		packprices.push({custType:1,years:$('#inputYears0').val(),monthPrice:$('#inputMonth0').val(),yearPrice:$('#inputYear0').val(),giftMonths:$('#inputGift_months0').val()});
+		packprices.push({custType:2,years:$('#inputYears1').val(),monthPrice:$('#inputMonth1').val(),yearPrice:$('#inputYear1').val(),giftMonths:$('#inputGift_months1').val()});
+		packprices.push({custType:3,years:$('#inputYears2').val(),monthPrice:$('#inputMonth2').val(),yearPrice:$('#inputYear2').val(),giftMonths:$('#inputGift_months2').val()});
+		packprices.push({custType:4,years:$('#inputYears3').val(),monthPrice:$('#inputMonth3').val(),yearPrice:$('#inputYear3').val(),giftMonths:$('#inputGift_months3').val()});
+		params.packprices=packprices;
+		
+		$(document).sgConfirm({
+			text: '确定保存服务项吗?',
+			cfn: function(r) {
+				if (r) {
+
+					$.ajax({
+						type: 'post',
+						async: false,
+						contentType: 'application/json',
+						dataType: 'json',
+						url: url,
+						data: JSON.stringify(params),
+						success: function(data) {
+							if (data) {
+								if (data.success) {
+
+									$('#packageContent').sgDatagrid('reload', 'sgDatagrid');
+
+								}
+								$(document).sgPup({
+									message: 'message_alert',
+									text: data.msg
+								});
+							}
+						},
+						error: function(res, error) {
+							alert(res.responseText);
+						}
+					});
+				}
+			}
+		});
+
+		$('#package_add').unbind(); //以下两行可以阻止提交2次，暂时注释，也不会提交2次
+		$(document).sgWindow('close', {
+			id: 'add_package'
+		});
+		return false;
+	};	
+
+	var savebill1 = function() {
+		//修改套餐
+		var params = {};
+		var url = '../../service/updateServicePackItemPrice';
+
+		params.packCode = $('#inputCode', '#package_modify').val();
+		params.name = $('#inputName', '#package_modify').val();
+		params.ismain = $('#inputIsmain', '#package_modify').val();
+		params.price = $('#inputPrice', '#package_modify').val();
+		params.flag = $('#selectFlag', '#package_modify').val();
+		params.remark = $('#inputRemark', '#package_modify').val();
+		
+		var packprices=[];
+		packprices.push({custType:1,years:$('#inputYears0').val(),monthPrice:$('#inputMonth0').val(),yearPrice:$('#inputYear0').val(),giftMonths:$('#inputGift_months0').val()});
+		packprices.push({custType:2,years:$('#inputYears1').val(),monthPrice:$('#inputMonth1').val(),yearPrice:$('#inputYear1').val(),giftMonths:$('#inputGift_months1').val()});
+		packprices.push({custType:3,years:$('#inputYears2').val(),monthPrice:$('#inputMonth2').val(),yearPrice:$('#inputYear2').val(),giftMonths:$('#inputGift_months2').val()});
+		params.packprices=packprices;
+
+		$(document).sgConfirm({
+			text: '确定修改套餐吗?',
+			cfn: function(r) {
+				if (r) {
+
+					$.ajax({
+						type: 'post',
+						async: false,
+						contentType: 'application/json',
+						dataType: 'json',
+						url: url,
+						data: JSON.stringify(params),
+						success: function(data) {
+							if (data) {
+								if (data.success) {
+
+									$('#packageContent').sgDatagrid('reload', 'sgDatagrid');
+
+								}
+								$(document).sgPup({
+									message: 'message_alert',
+									text: data.msg
+								});
+							}
+						},
+						error: function(res, error) {
+							alert(res.responseText);
+						}
+					});
+				}
+			}
+		});
+
+		$('#package_modify').unbind(); //以下两行可以阻止提交2次，暂时注释，也不会提交2次
+		$(document).sgWindow('close', {
+			id: 'modify_package'
+		});
+		return false;
+	};	
+
+	var addItem = function() {//添加套餐
+		var defaults = {
+			title: '添加套餐',
+			id: 'add_package',
+			form: 'package_form',
+			url: 'package_add.html',
+			width: 400,
+			height: 420,
+			buttons: [{
+				name: '保存',
+				type: 'submit',
+				onpress: savebill,
+			},{
+				name: '关闭',
+				onpress: winClose1,
+			}]
+		};
+		$(document).sgWindow(defaults);
+	}
+
+	var modifyItem = function() {//修改套餐
+	    	 	var obj = $('#packageContent');
+		        var bDiv = $('.bDiv',obj);
+		        if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length>1){
+		            $(document).sgPup({message:'message_info',text: "只能选择一条记录！"});
+		        }else if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length==0){
+		            $(document).sgPup({message:'message_info',text: "请选择一个选项！"});
+		        }else if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length==1){
+		        	 $('input[type=checkbox][checked=checked]',bDiv).each(function(){
+			                if($(this).attr("checked")){  
+			                	editId=this.value;
+			                	editObj=$(this).data('data');
+				    			var defaults = {
+				    				title : '服务项修改',
+				    				id : 'modify_package',
+				    				form : 'modify_package_form',
+				    				url : 'package_modify.html',
+				    				success: loadSuccess,
+				    				width : 400,
+				    				height : 420,
+				    				buttons : [ {
+				    					name : '保存',
+				    					type : 'submit',
+				    					onpress : savebill1
+				    				}, {
+				    					name : '关闭',
+				    					onpress : winClose3
+				    				}]
+				    			};
+				    			$(document).sgWindow(defaults);
+			                }
+			            });
+		   }else{
+			   $(document).sgPup({message:'message_info',text: "请选择一个选项！"});
+		    }
+    	
+	}	
+
+	var viewItem = function() {//查看套餐
+	    	 	var obj = $('#packageContent');
+		        var bDiv = $('.bDiv',obj);
+		        if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length>1){
+		            $(document).sgPup({message:'message_info',text: "只能选择一条记录！"});
+		        }else if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length==0){
+		            $(document).sgPup({message:'message_info',text: "请选择一个选项！"});
+		        }else if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length==1){
+		        	 $('input[type=checkbox][checked=checked]',bDiv).each(function(){
+			                if($(this).attr("checked")){  
+			                	editId=this.value;
+			                	editObj=$(this).data('data');
+				    			var defaults = {
+				    				title : '服务项查看',
+				    				id : 'view_package',
+				    				form : 'view_package_form',
+				    				url : 'package_view.html',
+				    				success: loadSuccess1,
+				    				width : 400,
+				    				height : 420,
+				    				buttons : [ {
+				    					name : '关闭',
+				    					onpress : winClose2
+				    				}]
+				    			};
+				    			$(document).sgWindow(defaults);
+			                }
+			            });
+		   }else{
+			   $(document).sgPup({message:'message_info',text: "请选择一个选项！"});
+		    }
+    	
+	}
+
+	var deleteItem = function() {//删除套餐
+		var obj = $('#packageContent');
+		var bDiv = $('.bDiv', obj);
+
+		if ($('input[type=checkbox][checked=checked]', bDiv) != null && $('input[type=checkbox][checked=checked]', bDiv).length == 0) {
+			$(document).sgPup({
+				message: 'message_info',
+				text: "请选择一个选项！"
+			});
+		}else if ($('input[type=checkbox][checked=checked]', bDiv) != null && $('input[type=checkbox][checked=checked]', bDiv).length > 1) {
+			$(document).sgPup({
+				message: 'message_info',
+				text: "选择多于一个选项！！"
+			});
+		}else if ($('input[type=checkbox][checked=checked]', bDiv) != null && $('input[type=checkbox][checked=checked]', bDiv).length == 1) {
+			$(document).sgConfirm({
+				text: '删除后不可恢复,确定删除?',
+				cfn: function(r) {
+					if (r) {
+						var flag = false;
+						//var ids = [];
+						$('input[type=checkbox][checked=checked]', bDiv).each(function() {
+							if ($(this).attr("checked")) {
+								//ids.push(editobj.packId);
+								$.ajax({
+									type: 'post',
+									async: false,
+									contentType: 'application/json',
+									dataType: 'json',
+									url: '../../service/deleteServicePackItemPrice',
+									data: JSON.stringify({packId:$(this).data('data').packId}),
+									success: function(data) {
+										if (data) {
+											if (data.success) {
+												$('#packageContent').sgDatagrid('reload', 'sgDatagrid');
+											}
+											$(document).sgPup({
+												message: 'message_alert',
+												text: data.msg
+											});
+										}
+									},
+									error: function(res, error) {
+										if (res && res.responseText) {
+											$(document).sgPup({
+												message: 'message_info',
+												text: res.responseText
+											});
+										}
+									}
+								});
+							}
+						});
+						
+						
+					}
+
+				}
+			});
+		}
+	}
+
+	var defaults = {
+		title: "",
+		//width: 1060,
+		width: '100%',
+		height: 395,
+		url: '../../service/findServicePackItemPrice',
+		datatype: "json",
+		usepager: true,
+		rownumbers: true,
+		useRp: true,
+		colid: 'id', //主键
+
+		colModel: [{
+			display: '套餐编号',
+			name: 'packCode',
+			width: 70,
+			sortable: false
+		}, {
+			display: '套餐名称',
+			name: 'name',
+			width: 70,
+			sortable: false
+		}, {
+			display: '金卡（月）',
+			name: 'type2MonthPrice',
+			width: 80,
+			sortable: false
+		},{
+			display: '金卡（年）',
+			name: 'type2YearPrice',
+			width: 80,
+			sortable: false
+		},{
+			display: '银卡（月）',
+			name: 'type1MonthPrice',
+			width: 80,
+			sortable: false
+		},{
+			display: '银卡（年）',
+			name: 'type1YearPrice',
+			width: 80,
+			sortable: false
+		},{
+			display: '普卡（月）',
+			name: 'type0MonthPrice',
+			width: 80,
+			sortable: false
+		}, {
+			display: '普卡（年）',
+			name: 'type0YearPrice',
+			width: 80,
+			sortable: false
+		},{
+			display: '新用户有效',
+			name: 'flag',
+			width: 80,
+			sortable: false,
+			formatter: function(value, row) {
+				if (value == 1) {
+					value = '有效';
+				} else if (value == 0) {
+					value = '过期';
+				}
+				return value;
+			}
+		}, {
+			display: '生效时间',
+			name: 'stamp',
+			width: 70,
+			sortable: false
+		},{
+			display: '价格',
+			name: 'price',
+			width: 60,
+			sortable: false
+		},{
+			display: '是否是主套餐',
+			name: 'ismain',
+			width: 85,
+			sortable: false
+		},{
+			display: '备注',
+			name: 'remark',
+			width: 60,
+			sortable: false
+		}, ],
+
+		buttons: [{
+			name: '添加',
+			bclass: 'add',
+			onpress: addItem
+		}, {
+			name: '修改',
+			bclass: 'add',
+			onpress: modifyItem
+		}, {
+			name: '查看',
+			bclass: 'add',
+			onpress: viewItem
+		},{
+			name: '删除',
+			bclass: 'delete',
+			onpress: deleteItem
+		}, ],
+		searchitems: [{
+			display: '套餐名称', 
+			value: '请输入套餐名称',
+			name: 'name',
+			type: 'text'
+		}, ],
+		sortname: "id",
+		sortorder: "desc"
+	};
+	$('#packageContent').sgDatagrid(defaults);
+})(jQuery);		
+	</script>
+</body>
+</html>

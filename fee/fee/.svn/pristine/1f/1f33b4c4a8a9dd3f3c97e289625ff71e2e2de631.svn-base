@@ -1,0 +1,166 @@
+package com.chinagps.fee.dao.impl;
+
+import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.hibernate.Query;
+import org.hibernate.SQLQuery;
+import org.hibernate.transform.Transformers;
+import org.springframework.stereotype.Repository;
+
+import com.chinagps.fee.comm.SystemException;
+import com.chinagps.fee.dao.UnitDao;
+import com.chinagps.fee.entity.po.Unit;
+import com.chinagps.fee.util.PageSelect;
+import com.chinagps.fee.util.StringUtils;
+import com.chinagps.fee.util.Utils;
+import com.chinagps.fee.util.page.Page;
+import com.chinagps.fee.util.page.PageUtil;
+
+/**
+ * @Package:com.gboss.dao.impl
+ * @ClassName:UnitDaoImpl
+ * @Description:TODO
+ * @author:xiaoke
+ * @date:2014-3-24 下午3:09:01
+ */
+
+@Repository("UnitDao")  
+public class UnitDaoImpl extends BaseDaoImpl implements UnitDao {
+
+
+	@Override
+	public Page<Unit> search(PageSelect<Unit> pageSelect, Long subco_no) {
+		StringBuffer sb =new StringBuffer( "from Unit where 1=1 ");
+		Map filter = pageSelect.getFilter();
+		Set<String> keys = filter.keySet();
+		if (Utils.isNotNullOrEmpty(subco_no)) {
+			sb.append(" and subco_no=").append(subco_no);
+		}
+		for(Iterator it=keys.iterator();it.hasNext();){
+			String key = (String)it.next();
+			if("vehicle_id".equals(key)){
+				 sb.append(" and vehicle_id=");
+				 sb.append( filter.get(key)).append(")");
+			}else{
+				if(filter.get(key) instanceof Integer && Utils.isNotNullOrEmpty(filter.get(key))) {
+					 sb.append(" and ").append(key).append(" = ").append((Integer) filter.get(key) );
+				}else if (filter.get(key) instanceof String && Utils.isNotNullOrEmpty(filter.get(key))) {
+					sb.append(" and ").append(key).append(" like '%").append(StringUtils.replaceSqlKey((String)filter.get(key))).append("%'");
+				}
+			}
+			
+		}
+		if (StringUtils.isNotBlank(pageSelect.getOrder())) {
+			sb.append(" order by ").append(pageSelect.getOrder());
+			if (pageSelect.getIs_desc()) {
+				sb.append(" desc");
+			} else {
+				sb.append(" asc");
+			}
+		}else{
+			sb.append(" order by stamp,customer_id desc");
+		}
+		//List list = listAll(hql, pageSelect.getPageNo(), pageSelect.getPageSize());
+		Query query = mysql1SessionFactory.getCurrentSession().createQuery(sb.toString());  
+		query.setFirstResult(PageUtil.getPageStart(pageSelect.getPageNo(), pageSelect.getPageSize()));
+		query.setMaxResults(pageSelect.getPageSize());
+		List list=query.list();
+		
+		String oldStr=sb.toString();
+		sb.delete(0, sb.length());
+		sb.append(" select count(*) ").append(oldStr);
+		int count =((Long)mysql1SessionFactory.getCurrentSession().createQuery(sb.toString()).uniqueResult()).intValue();//countAll(sb);
+		return PageUtil.getPage(count, pageSelect.getPageNo(), list, pageSelect.getPageSize());
+	}
+	
+	@Override
+	public List<HashMap<String, Object>> findUnitInNets(
+			Map<String, Object> conditionMap, String order, boolean isDesc,
+			int pageNo, int pageSize) throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append("select c.customer_name customerName, v.plate_no plateNo, ");
+		sb.append("u.call_letter callLetter, ");
+		sb.append("ut.unittype,date_format(u.fix_time,'%Y-%m-%d') fixTime, date_format(u.service_date,'%Y-%m-%d') serviceDate, ");
+		sb.append("u.sales, i1.real_amount realAmount1,date_format(i1.fee_sedate,'%Y-%m-%d') feeSedate1,");
+		sb.append("i2.real_amount realAmount2, date_format(i2.fee_sedate,'%Y-%m-%d') feeSedate2,u.branch,u.area");
+		sb.append(" from t_ba_unit u ");
+		sb.append(" inner join t_ba_customer c on u.customer_id = c.customer_id");
+		sb.append(" left join t_ba_vehicle v on u.vehicle_id = v.vehicle_id  ");
+		sb.append(" left join t_ba_cust_vehicle cv on cv.customer_id = c.customer_id and cv.vehicle_id = v.vehicle_id");
+		sb.append(" left join t_ba_unittype ut on u.unittype_id = ut.unittype_id");
+		sb.append(" left join t_fee_info i1 on u.unit_id = i1.unit_id and i1.feetype_id = 1");
+		sb.append(" left join t_fee_info i2 on u.unit_id = i2.unit_id and i2.feetype_id = 2");
+		 sb = getCondition4UnitInNets(sb, conditionMap);
+		if (StringUtils.isNotBlank(order)) {
+			sb.append(" order by ").append(order);
+			if (isDesc) {
+				sb.append(" desc");
+			} else {
+				sb.append(" asc");
+			}
+		}else{
+			sb.append(" order by c.customer_name, v.plate_no");
+		}
+		if (pageNo>0 && pageSize>0) {
+			sb.append(" limit ");
+			sb.append(PageUtil.getPageStart(pageNo, pageSize));
+			sb.append(",");
+			sb.append(pageSize);
+		}
+		
+		SQLQuery query=mysql1SessionFactory.getCurrentSession().createSQLQuery(sb.toString());
+		query.setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
+		return query.list();
+	}
+
+	@Override
+	public int countUnitInNets(Map<String, Object> conditionMap)
+			throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append(" select count(u.call_letter)");
+		sb.append(" from t_ba_unit u ");
+		sb.append(" inner join t_ba_customer c on u.customer_id = c.customer_id");
+		sb.append(" left join t_ba_vehicle v on u.vehicle_id = v.vehicle_id  ");
+		sb.append(" left join t_ba_cust_vehicle cv on cv.customer_id = c.customer_id and cv.vehicle_id = v.vehicle_id");
+		sb.append(" left join t_ba_unittype ut on u.unittype_id = ut.unittype_id");
+		sb.append(" left join t_fee_info i1 on u.unit_id = i1.unit_id and i1.feetype_id = 1");
+		sb.append(" left join t_fee_info i2 on u.unit_id = i2.unit_id and i2.feetype_id = 2");
+		sb = getCondition4UnitInNets(sb, conditionMap);
+		SQLQuery query=mysql1SessionFactory.getCurrentSession().createSQLQuery(sb.toString());
+		return ((BigInteger)query.uniqueResult()).intValue();
+	}
+	 private StringBuffer getCondition4UnitInNets(StringBuffer sb,Map conditionMap){
+			sb.append(" where u.flag = 0  ");
+			if(conditionMap!=null){
+				if(Utils.isNotNullOrEmpty(conditionMap.get("subcoNo"))){//分公司id
+					sb.append(" and u.subco_no=").append(conditionMap.get("subcoNo"));
+				}
+				if(conditionMap.get("startDate")!=null && StringUtils.isNotBlank(conditionMap.get("startDate").toString())){//开始日期
+					sb.append(" and u.service_date >='").append(conditionMap.get("startDate")).append(" 00:00:00'");
+				}
+				if(conditionMap.get("endDate")!=null && StringUtils.isNotBlank(conditionMap.get("endDate").toString())){//结束日期
+					sb.append(" and u.service_date <='").append(conditionMap.get("endDate")).append(" 23:59:59'");
+				}
+				if (conditionMap.get("customerName")!=null && StringUtils.isNotBlank(conditionMap.get("customerName").toString())) {//客户名称
+					sb.append(" and c.customer_name like '%").append(StringUtils.replaceSqlKey(conditionMap.get("customerName"))).append("%'");
+				}
+				if (conditionMap.get("sales")!=null && StringUtils.isNotBlank(conditionMap.get("sales").toString())) {//营销经理
+					sb.append(" and u.sales like '%").append(StringUtils.replaceSqlKey(conditionMap.get("sales"))).append("%'");
+				}
+				if (conditionMap.get("branch")!=null && StringUtils.isNotBlank(conditionMap.get("branch").toString())) {//销售网点
+					sb.append(" and u.branch like '%").append(StringUtils.replaceSqlKey(conditionMap.get("branch"))).append("%'");
+				}
+				if (conditionMap.get("area")!=null && StringUtils.isNotBlank(conditionMap.get("area").toString())) {//入网地
+					sb.append(" and u.area like '%").append(StringUtils.replaceSqlKey(conditionMap.get("area"))).append("%'");
+				}
+			}
+			return sb;
+		 } 
+
+}
+

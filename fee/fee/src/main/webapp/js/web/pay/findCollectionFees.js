@@ -1,0 +1,513 @@
+(function($) {
+	    $('#btn_reset').on('click',function(){
+	    	$(".findCF-down span").empty();//等于是只显示最后一次。
+        	$('#dgd_collectionUnitVehicles_tbl').empty();
+	    });
+		var defaults = {
+				title: "",
+				width: 1340,
+				height: 395,
+				url: '',
+				datatype: "json",
+				//usepager: true,
+				rownumbers: true,
+				useRp: true,
+				//colid: 'id', //主键
+				colModel: [{
+					display: '车牌号码',
+					name: 'plateNo',
+					width: 108,
+					sortable: false
+				},{
+					display: '车载电话',
+					name: 'callLetter',
+					width: 108,
+					sortable: false
+				},{
+					display: '安装日期',
+					name: 'fixTime',
+					width: 108,
+					sortable: false
+				},{
+					display: '投保公司名称',
+					name: 'sname',
+					width: 108,
+					sortable: false
+				}, {
+					display: '是否已购盗抢险',
+					name: 'isBuyTp',
+					width: 108,
+					sortable: false,
+					formatter: function(value, row) {
+						if (value == 0) {
+							value = '否';
+						} else if (value == 1) {
+							value = '是';
+						}
+						return value;
+					}
+				}, {
+					display: '入网状态',
+					name: 'regStatus',
+					width: 100,
+					sortable: false,
+					formatter: function(value, row) {
+						if (value == 0) {
+							value = '在网';
+						} else if (value == 1) {
+							value = '离网';
+						}else if (value == 2) {
+							value = '欠费离网';
+						}else if (value == 3) {
+							value = '非入网';
+						}else if (value == 4) {
+							value = '研发测试';
+						}else if (value == 5) {
+							value = '电工测试';
+						}else if (value == 6) {
+							value = '重新开通';
+						}
+						return value;
+					}
+				},{
+					display: '计费项目',
+					name: 'feeItems',
+					width: 616,
+					sortable: false,
+					formatter: function(value, row) {
+						if(value){
+							return '<div style="text-align:left;">'+value+'</div>';
+						}else{
+							return '';
+						}
+					}
+				} ]
+			};
+			$('#dgd_collectionUnitVehicles').sgDatagrid(defaults);
+		//查询
+		$("#query").click(function(event){
+			var customerN = $("#customerName").val();
+			var vehicleN = $("#vehicleNum").val();
+			var unitN = $("#unitNum").val();
+			var acNoS = $("#acNoS").val();
+			var payCtNoS = $("#payCtNoS").val();
+			if(customerN.trim().length==0&&vehicleN.trim().length==0&&unitN.trim().length==0&&acNoS.trim().length==0&&payCtNoS.trim().length==0){
+				$(document).sgPup({
+					message: 'message_info',
+					text: "请至少输入一个查询条件！",
+				});
+				$("#customerName").focus();
+			}else{
+				var params= {};
+				if(customerN.trim().length!=0){
+					params.customerId = $("#customerId").val();
+				}
+				if(vehicleN.trim().length!=0){
+					params.vehicleId = $("#vehicleId").val();
+				}
+				if(unitN.trim().length!=0){
+					params.unitId = $("#unitId").val();
+				}
+				if(acNoS.trim().length!=0){
+					params.customerId = $("#customerId2").val();
+				}
+				if(payCtNoS.trim().length!=0){
+					params.customerId = $("#customerId3").val();
+				}
+				var url = '../../pay/findCollectionFees';
+				$.ajax({
+					type: "POST",
+	                async: true,
+	                url: url,
+	                contentType : 'application/json',
+	                data:JSON.stringify(params),
+	                dataType : "json",
+	                success: function(data){
+	                	$(".findCF-down span").empty();//等于是只显示最后一次。
+	                	$('#dgd_collectionUnitVehicles_tbl').empty();
+	                	if(data){
+	                		$('#customerName0').append(data.customerName);
+	                		$('#acNo').append(data.acNo);
+	                		var acType=data.acType;
+	                		if(acType==0){
+	                			acType='借记卡';
+	                		}else if(acType==1){
+	                			acType='存折';
+	                		}else if(acType==2){
+	                			acType='信用卡';
+	                		}
+	                		$('#acType').append(acType);
+	                		$('#acName').append(data.acName);
+	                		$('#acIdNo').append(data.acIdNo);
+	                		$('#bankCode').append(data.bankCode);
+	                		var agency=data.agency;
+	                		if(agency==1){
+	                			agency='银盛';
+	                		}else if(agency==2){
+	                			agency='金融中心';
+	                		}else if(agency==3){
+	                			agency='银联';
+	                		}
+	                		$('#agency').append(agency);
+	                		$('#payCtNo').append(data.payCtNo);
+	                		$('#bank').append(data.bank);
+	                		$('#isDelivery').append(data.isDeliveryVal);
+	                		$('#addressee').append(data.addressee);
+	                		$('#printFreq').append(data.printFreq);
+	                		if(data.province && data.city && data.area){
+	                			$('#address').append(data.province+'省'+data.city+'市'+data.area+'区(县)'+data.address);
+	                		}else if(data.address){
+	                			$('#address').append(data.address);
+	                		}
+	                		$('#postCode').append(data.postCode);
+	                		$('#tel').append(data.tel);
+	                		$('#dgd_collectionUnitVehicles .bDiv table').empty();
+	                		if(data.vehiUnitList){
+	                			$('#dgd_collectionUnitVehicles').sgDatagrid('appendData',data.vehiUnitList);
+	                		}else{
+	                			$('#dgd_collectionUnitVehicles_tbl').empty();
+	                		}
+	                	}
+	                }, error : function(res,error) { 
+	   		  	     if(res && res.responseText){ 
+	   		  	    	 $(document).sgPup({message:'message_info',text:"调取数据失败。"});
+	   		  	    }     
+	   			  }  
+				});
+			}
+
+			event.preventDefault();//阻止默认click事件
+			
+		});	
+		/*
+		//用户名称
+		var checkUser = function(){
+			var params = {};
+			params.pageNo = 1;
+			params.pageSize = 10;
+			params.filter = {};
+			params.filter.customer_name = this.value;
+			var obj = $(this);
+			$.ajax({
+				  type : 'post', 
+				  async: true,   
+				  contentType : 'application/json',     
+				  dataType : 'json',     
+				  url : '../../ba/getCustomers',   
+				  data:JSON.stringify(params),
+				  success : function(data) {
+					  if(data){
+						  var manager = $("#customerName");		  
+						  if(manager){
+							  if(data.items.length>0){
+								  customerlist = {};
+								  $("#customerlist").empty();
+							  }
+							  $.each(data.items,function(k,v){
+								  var op = $("<option></option>");
+								  op.val(obj.val()+" "+v.customer_name.replace(/\s/g,'')+" "+v.id_no);
+								  $("#customerlist").append(op);
+								  
+								  customerlist[v.customer_name.replace(/\s/g,'')+v.id_no] = v.customer_id;
+		 				  	 }); 
+							}
+					  }else{
+					  	$(document).sgPup({message:'message_info',text: data});
+					  }
+				  } ,     
+				  error : function(res,error) { 
+				  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+				  }    
+				});
+		}
+		//车台号码
+		var checkUnit = function(){
+			var params = {};
+			var manager = $("#unitNum");
+			var vehicle_id = $("#vehicleId").val();
+			params.pageNo = 1;
+			params.pageSize = 10;
+			params.filter = {};
+			params.filter.call_letter = manager.val();
+			if(vehicle_id){
+				params.filter.vehicle_id = vehicle_id;
+			}
+			var obj = $(this);
+			$.ajax({
+				  type : 'post', 
+				  async: true,   
+				  contentType : 'application/json',     
+				  dataType : 'json',     
+				  url : '../../ba/getUnits',   
+				  data:JSON.stringify(params),
+				  success : function(data) {
+					  if(data){
+						  var manager = $("#unitNum");		  
+						  if(manager){
+							  //if(data.items.length>0){
+								  unitlist = {};
+								  $("#unitlist").empty();
+							  //}
+							  $.each(data.items,function(k,v){
+								  var op = $("<option></option>");
+								  op.val(manager.val()+" "+v.call_letter);
+								  $("#unitlist").append(op);
+								  
+								  unitlist[v.call_letter] = v.unit_id;
+		 				  	 }); 
+							}
+					  }else{
+					  	$(document).sgPup({message:'message_info',text: data});
+					  }
+				  } ,     
+				  error : function(res,error) { 
+				  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+				  }    
+				});
+		}
+		//车牌号
+		var checkVehicle = function(){
+			var params = {};
+			var manager = $("#vehicleNum");
+			var customer_id = $("#customerId").val();
+			params.pageNo = 1;
+			params.pageSize = 10;
+			params.filter = {};
+			params.filter.plate_no = manager.val();
+			if(customer_id){
+				params.filter.customer_id = customer_id;
+			}
+			var obj = $(this);
+			$.ajax({
+				  type : 'post', 
+				  async: true,   
+				  contentType : 'application/json',     
+				  dataType : 'json',     
+				  url : '../../ba/getVehicles',   
+				  data:JSON.stringify(params),
+				  success : function(data) {
+					  if(data){
+						  if(manager){
+							  //if(data.items.length>0){
+								  vehiclelist = {};
+								  $("#vehiclelist").empty();
+							  //}
+							  $.each(data.items,function(k,v){
+								  var op = $("<option></option>");
+								  op.val(manager.val()+" "+v.plate_no.replace(/\s/g,''));
+								  $("#vehiclelist").append(op);
+								  
+								  vehiclelist[v.plate_no.replace(/\s/g,'')] = v.vehicle_id;
+		 				  	 }); 
+							}
+					  }else{
+					  	$(document).sgPup({message:'message_info',text: data});
+					  }
+				  } ,     
+				  error : function(res,error) { 
+				  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+				  }    
+				});
+		}
+	  //填充用户名称
+	    $.ajax( {
+		  type : 'post', 
+		  async: true,   
+		  contentType : 'application/json',     
+		  dataType : 'json',     
+		  url : '../../ba/getCustomers',   
+		  data:JSON.stringify({pageNo:1,pageSize:10,filter:{}}),
+		  success : function(data) {
+			  if(data){
+				  var manager = $("#customerName");
+				  if(manager){
+					  if(data.items.length>0){
+						  customerlist = {};
+						  $("#customerlist").empty();
+					  }
+					  $.each(data.items,function(k,v){
+						  var op = $("<option></option>");
+						  op.val(v.customer_name.replace(/\s/g,'')+" "+v.id_no);
+						  $("#customerlist").append(op);
+						  
+						  customerlist[v.customer_name.replace(/\s/g,'')+v.id_no] = v.customer_id;
+					  	 }); 
+					  manager.on('keyup',checkUser);
+					  manager.on('change',function(){
+						  	var strs = this.value.split(" ");
+							$(this).val(strs[strs.length-2]);
+							$("#customerId").val(customerlist[strs[strs.length-2]+strs[strs.length-1]]);
+							if($(this).val().length==0 || $("#customerId").val().length==0){
+								$("#customerId").val("");
+								manager.val("");
+							}else{
+								 checkVehicle();
+							}
+							
+						});
+
+					};
+			  }else{
+			  	$(document).sgPup({message:'message_info',text: data});
+			  }
+		  },     
+		  error : function(res,error) { 
+		  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+		  }    
+		});
+	  //填充车台号码
+	    $.ajax( {
+		  type : 'post', 
+		  async: true,   
+		  contentType : 'application/json',     
+		  dataType : 'json',     
+		  url : '../../ba/getUnits',   
+		  data:JSON.stringify({pageNo:1,pageSize:10,filter:{}}),
+		  success : function(data) {
+			  if(data){
+				  var manager = $("#unitNum");
+				  if(manager){
+					  if(data.items.length>0){
+						  unitlist = {};
+						  $("#unitlist").empty();
+					  }
+					  $.each(data.items,function(k,v){
+						  var op = $("<option></option>");
+						  op.val(v.call_letter);
+						  $("#unitlist").append(op);
+						  
+						  unitlist[v.call_letter] = v.unit_id;
+					  	 }); 
+					  manager.on('keyup',checkUnit);
+					  manager.on('change',function(){
+						  	var strs = this.value.split(" ");
+									$(this).val(strs[strs.length-1]);
+									$("#unitId").val(unitlist[strs[strs.length-1]]);
+									if($(this).val().length==0 || $("#unitId").val().length==0){
+										$("#unitId").val("");
+										manager.val("");
+									}
+							
+						});
+
+					};
+			  }else{
+			  	$(document).sgPup({message:'message_info',text: data});
+			  }
+		  },     
+		  error : function(res,error) { 
+		  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+		  }    
+		});
+	  //填充车牌号
+	    $.ajax( {
+		  type : 'post', 
+		  async: true,   
+		  contentType : 'application/json',     
+		  dataType : 'json',     
+		  url : '../../ba/getVehicles',   
+		  data:JSON.stringify({pageNo:1,pageSize:10,filter:{}}),
+		  success : function(data) {
+			  if(data){
+				  var manager = $("#vehicleNum");
+				  if(manager){
+					  if(data.items.length>0){
+						  vehiclelist = {};
+						  $("#vehiclelist").empty();
+					  }
+					  $.each(data.items,function(k,v){
+						  var op = $("<option></option>");
+						  op.val(v.plate_no.replace(/\s/g,''));
+						  $("#vehiclelist").append(op);
+						  
+						  vehiclelist[v.plate_no.replace(/\s/g,'')] = v.vehicle_id;
+					  	 }); 
+					  manager.on('keyup',checkVehicle);
+					  manager.on('change',function(){
+						  	var strs = this.value.split(" ");
+									$(this).val(strs[strs.length-1]);
+									$("#vehicleId").val(vehiclelist[strs[strs.length-1]]);
+									if($(this).val().length==0 || $("#vehicleId").val().length==0){
+										$("#vehicleId").val("");
+										manager.val("");
+									}else{
+										checkUnit();
+									}
+							
+						});
+
+					};
+			  }else{
+			  	$(document).sgPup({message:'message_info',text: data});
+			  }
+		  },     
+		  error : function(res,error) { 
+		  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+		  }    
+		});
+		*/
+		
+		/*自动搜索 客户名称*/
+		$("#customerName").sgAutoComplete({
+			  bId:'customerId',//绑定的id
+        	  bUList:'customerlist',//绑定的ul list
+        	  url:'../../ba/getCustomers',
+              likeAttr:'customer_name',//模糊匹配的字段名
+             // backLi:{name:'customer_id',text:'customer_name,id_no'},//显示在 li中的text可以显示多个
+              backLi:{name:'customer_id',text:'customer_name'},
+              //clearIds:'unit_id,vehicle_id',
+              queryBack:function(){
+            	  $("#query").trigger('click');
+              }
+		});
+		/*自动搜索 车牌号*/
+		$("#vehicleNum").sgAutoComplete({
+			  bId:'vehicleId',//绑定的id
+        	  bUList:'vehiclelist',//绑定的ul list
+        	  url:'../../ba/getVehicles',
+              likeAttr:'plate_no',//模糊匹配的字段名
+              backLi:{name:'vehicle_id',text:'plate_no'},
+             // clearIds:'unit_id,customer_id',
+              queryBack:function(){
+            	  $("#query").trigger('click');
+            	  window.gbossLocalStorage.addItem('storage_vehicle',{plateNo:$("#vehicleNum").val(),callLetter:$("#unitNum").val()});
+              }
+		});
+		/*自动搜索  车载呼号*/
+		$("#unitNum").sgAutoComplete({
+			  bId:'unitId',//绑定的id
+        	  bUList:'unitlist',//绑定的ul list
+        	  url:'../../ba/getUnits',
+              likeAttr:'call_letter',//模糊匹配的字段名
+              backLi:{name:'unit_id',text:'call_letter'},
+              //clearIds:'vehicle_id,customer_id',
+              queryBack:function(){
+            	  $("#query").trigger('click');
+            	  window.gbossLocalStorage.addItem('storage_vehicle',{plateNo:$("#vehicleNum").val(),callLetter:$("#unitNum").val()});
+              }
+		});
+		$("#acNoS").sgAutoComplete({
+			bId:'customerId2',//绑定的id
+      	    bUList:'customerlist2',//绑定的ul list
+      	    url:'../../pay/findCollectionPage',
+            likeAttr:'acNo',//模糊匹配的字段名
+           // backLi:{name:'customer_id',text:'customer_name,id_no'},//显示在 li中的text可以显示多个
+            backLi:{name:'customerId',text:'acNo,acName'},
+            queryBack:function(){
+          	  $("#query").trigger('click');
+            }
+		});
+		$("#payCtNoS").sgAutoComplete({
+			  bId:'customerId3',//绑定的id
+      	    bUList:'customerlist3',//绑定的ul list
+      	    url:'../../pay/findCollectionPage',
+            likeAttr:'payCtNo',//模糊匹配的字段名
+           // backLi:{name:'customer_id',text:'customer_name,id_no'},//显示在 li中的text可以显示多个
+            backLi:{name:'customerId',text:'payCtNo,acName'},
+            //clearIds:'unit_id,vehicle_id',
+            queryBack:function(){
+          	  $("#query").trigger('click');
+            }
+		});
+        /* 自动搜索 END*/
+})(jQuery);	

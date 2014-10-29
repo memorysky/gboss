@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <script type="text/javascript" src="../../js/jquery-2.0.3.min.js" ></script>
+     <link rel="stylesheet" type="text/css" href="../../css/print.css" >
+    <title>打印计费系统资料</title>
+</head>
+<body>
+	<!-- postCode 邮编,
+	address 地址, 
+	addressee 收件人, 
+	callLetter 车载电话, 
+	customerName 用户名称,
+	bank 银行名称, 
+	acNo 扣款银行账号, 
+	bwNo 流水号, 
+	printDate 打印日期, 
+
+	<itemList>
+	itemName 项目,
+	itemMoney 金额, 
+	payDate扣款日期, 
+	</itemList>
+
+	realAmountRMB 合计人民币(大写), 
+	realAmount (小写), 
+	paySEdate 计费时段,  -->
+	<div id="print_all"></div>
+</body>
+<script type="text/javascript">
+	if(window.opener && window.opener.callback){
+		window.opener.callback($(window.document.body),window);
+	}
+	
+	//关闭前，移除父页面的遮罩
+	window.onbeforeunload = function(){ 
+	    $('div#print_mask',window.opener.document.body).remove();
+	};
+	
+</script>
+</html>

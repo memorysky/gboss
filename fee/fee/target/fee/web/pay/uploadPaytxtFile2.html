@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>银联托收数据上传</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css" /> -->
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+<form id="form_paytxt_imp" method="post" action="../../pay/uploadPaytxtFile2" target="frm_paytxt_imp" enctype="multipart/form-data">
+	<div class="uploadPaytxtFile0 jfxtTab">
+	  <div class="bills">
+		<section id="downPaytxtFileContent">
+		  <b>特别说明：</b><br />
+				<p>
+				一、请待所有托收机构的提回文件上传完再解锁。<br />
+				   </p>
+			<div class="choose">
+				<input type="file" id="paytxtFile" name="paytxtFile" accept=".TXT,.txt" multiple="multiple" class="form-control input-sm" />
+				<ul class="sub_nav">
+				</ul>
+			</div>
+			<img src="../../images/loading.gif" id="loading" style="display: none;">
+			<div class="upload">
+				<button class="btn btn-default btn-sm" type="submit" id="btn_submit"><span class="glyphicon glyphicon-upload"></span>上传</button>
+				<button class="btn btn-default btn-sm" type="reset" ><span class="glyphicon glyphicon-remove-circle"></span>取消</button>
+				<button class="btn btn-default btn-sm" type="button" id="btn_lockadd"><span class="glyphicon glyphicon-magnet"></span>解锁</button>
+				<span id="spn_datalock" style="line-height: 24px;">已解锁</span>
+			</div>
+			<h6>上传结果：</h6>
+			<div id="div_result" style="height: 200px;color: red;overflow-y:auto;">
+			</div>
+		</section>
+	   </div>
+	</div>
+</form>
+<iframe name='frm_paytxt_imp' id="frm_paytxt_imp" style="display:none;" ></iframe> 
+</body>
+<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/common.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js" ></script>
+	<script type="text/javascript" src="../../js/web/pay/uploadPaytxtFile2.js" ></script>
+</html>

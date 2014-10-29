@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>托收资料查询</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+
+</head>
+<body>
+	<div class="findCF jfxtTab">
+	  <div class="bills">
+		<section id="findCFContent">
+			<form class="findCF-up form-inline">
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="customerName" id="customerName" placeholder="请输入客户名称">
+					<input type="hidden"  class="" value="" name="customerId" id="customerId">
+					<ul class="show_list" id="customerlist"></ul>
+				</div>
+				
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="vehicleNum" id="vehicleNum" placeholder="请输入车牌号码">
+					<input type="hidden"  class="" value="" name="vehicleId" id="vehicleId">
+					<ul class="show_list" id="vehiclelist"></ul>
+	            </div>
+				
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="unitNum" id="unitNum"  placeholder="请输入车载电话">
+					<input type="hidden"  class="" value="" name="unitId" id="unitId">
+					<ul class="show_list" id="unitlist"></ul>	
+				</div>
+				
+				<button type="button" class="btn btn-default" style="display:none;" id="query">查询</button> 
+			</form>
+		    <div class="findCF-down">
+		    	<table class="table table-bordered table-condensed">
+		    		<tbody>
+		    		    <tr>
+		    				<td width="16%">客户名称：</td>
+		    				<td width="18%"><span id="customerName0"></span></td>
+		    				<td width="16%">银行帐号：</td>
+		    				<td width="17%"><span id="acNo"></span></td>
+		    				<td width="16%">账号类型：</td>
+		    				<td width="17%"><span id="acType"></span></td>
+		    				
+		    			</tr>
+		    			<tr>
+		    				<td>账户名：</td>
+		    				<td><span id="acName"></span></td>
+		    				<td>身份证号：</td>
+		    				<td><span id="acIdNo"></span></td>
+		    				<td>银行名称：</td>
+		    				<td><span id="bank"></span></td>
+		    			</tr>
+		    			<tr>
+		    				<td>银行编号：</td>
+		    				<td><span id="bankCode"></span></td>
+		    				<td>托收机构：</td>
+		    				<td><span id="agency"></span></td>
+		    				<td>托收合同号：</td>
+		    				<td><span id="payCtNo"></span></td>
+		    			</tr>
+		    			<tr>
+		    				<td>发票投递方式：</td>
+		    				<td><span id="isDelivery"></span></td>
+		    				<td>发票收件人：</td>
+		    				<td><span id="addressee"></span></td>
+		    				<td>打印频率(月)：</td>
+		    				<td><span id="printFreq"></span></td>
+		    			</tr>
+		    			<tr>
+		    				<td>发票投递地址：</td>
+		    				<td><span id="address"></span></td>
+		    				<td>邮政编码：</td>
+		    				<td><span id="postCode"></span></td>
+		    				<td>联系电话：</td>
+		    				<td><span id="tel"></span></td>
+		    			</tr>
+		    		</tbody>
+		    	</table>
+		    </div>
+		 	<div id="dgd_collectionUnitVehicles">
+
+		    </div>
+		</section>
+	   </div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/datagrid.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<script type="text/javascript" src="../../js/sgAutoComplete.min.js"></script>
+	<script type="text/javascript" src="../../js/web/pay/findCollectionFees.js"></script>
+</body>
+</html>

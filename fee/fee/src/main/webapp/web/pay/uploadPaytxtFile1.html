@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>金融中心托收数据上传</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css" /> -->
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+<form id="form_paytxt_imp" method="post" action="../../pay/uploadPaytxtFile1" target="frm_paytxt_imp" enctype="multipart/form-data">
+	<div class="uploadPaytxtFile0 jfxtTab">
+	  <div class="bills">
+		<section id="downPaytxtFileContent">
+		 <b>特别说明：</b><br />
+				  <p>一、可以选择所有交易文件、总结文件一同上传，也可以选择一组或多组交易和总结文件一同上传，前提是交易文件和匹配的总结文件需成对上传。<br />
+				  二、如果全选所有文件上传，由于一次性上传的数据量较大，因此上传时间较久，可能需要10分钟，这段时间请耐心等待，最好不好做其他操作。<br />
+				  三、请待所有托收机构的提回文件上传完再解锁。<br />
+				   </p>
+			<div class="choose">
+				<input type="hidden" id="agency" name="agency" value="2"/>
+				<input type="file" id="paytxtFile" name="paytxtFile"  accept=".T10,.T20" multiple="multiple" class="form-control input-sm" />
+			<ul class="sub_nav">
+				</ul>
+			</div>
+			<img src="../../images/loading.gif" id="loading" style="display: none;">
+			<div class="upload">
+				<button class="btn btn-default btn-sm" type="submit" id="btn_submit"><span class="glyphicon glyphicon-upload"></span>上传</button>
+				<button class="btn btn-default btn-sm" type="reset" ><span class="glyphicon glyphicon-remove-circle"></span>取消</button>
+				<button class="btn btn-default btn-sm" type="button" id="btn_lockadd"><span class="glyphicon glyphicon-magnet"></span>解锁</button>
+				<span id="spn_datalock" style="line-height: 24px;">已解锁</span>
+			</div>
+			<h6>上传结果：</h6>
+			<div id="div_result" style="height: 200px;color: red;overflow-y:auto;">
+			</div>
+		</section>
+	   </div>
+	</div>
+</form>
+<iframe name='frm_paytxt_imp' id="frm_paytxt_imp" style="display:none;" ></iframe> 
+</body>
+<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/common.min.js"></script>
+    <script type="text/javascript" src="../../js/pup.min.js" ></script>
+    <script type="text/javascript" src="../../js/web/pay/uploadPaytxtFile1.js" ></script>
+</html>

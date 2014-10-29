@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>备忘录管理</title>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+	<div class="jfxtTab">
+	<div id="sys_memo_grid" class="datagird bills"></div>
+	</div>
+</body>
+<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<script type="text/javascript" src="../../js/index.min.js"></script>
+<script type="text/javascript" src="../../js/datagrid.min.js"></script>
+<script type="text/javascript" src="../../js/form.js"></script>
+<script type="text/javascript" src="../../js/window.min.js"></script>
+<script type="text/javascript" src="../../js/pup.min.js"></script>
+<script type="text/javascript" src="../../js/web/hp/content.js"></script>
+</html>

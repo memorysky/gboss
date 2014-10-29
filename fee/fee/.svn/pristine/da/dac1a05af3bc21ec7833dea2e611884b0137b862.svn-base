@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>发票打印异常处理</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+	<div class="findErrorPrintsPage jfxtTab">
+	  <div class="bills">
+		<section id="findErrorPrintsPageContent">
+			<article class="fpp-query ">
+				<form class="form-horizontal">
+				  <fieldset class="clearfix">
+				    <div class="form-group col-sm-4 col-md-3">
+				       <div class="checkbox col-sm-5 control-label">
+				          <label>
+				            <!-- <input type="checkbox" name="ckb_type" id="ckb_date" class=> --> 打印日期：
+				          </label>
+				      </div>
+				      <div class="col-sm-6">
+				        <input type="date" name="printDate" class="form-control" id="inputDate" placeholder="打印日期">
+				      </div>
+				    </div>
+				    <div class="form-group col-sm-2">
+				      	<button type="submit" id="search" class="btn btn-default">查询</button>
+				    </div>
+				  </fieldset>
+				</form>				
+			</article>
+			<article id="fepp-result">
+							
+			</article>
+		</section>
+	   </div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/web/invoice/printE.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<script type="text/javascript" src="../../js/web/invoice/findErrorPrintsPage.js"></script>
+</body>
+</html>

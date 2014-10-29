@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>欠费用户查询</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+	<div class="findAIP jfxtTab">
+	  <div class="bills">
+		<section id="findAIPContent">
+			<form class="findAIP-up form-inline">
+				<div class="form-group">
+				<label>缴费方式：</label><select id="payModel"><option value="">请选择---</option></select>
+				</div>
+			    
+			    <div class="form-group">
+			     <label>欠费类型：</label>
+			     <select id="arrType"><option value="">请选择---</option>
+			     </select>
+				</div>
+				<div class="form-group"><input type="date" class="form-control" id="serviceEdate" name="serviceEdate">
+				</div>
+				<div class="form-group">
+				
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="customerName" id="customerName" placeholder="请输入客户名称">
+					<input type="hidden"  class="" value="" name="customerId" id="customerId">
+					<ul class="show_list" id="customerlist"></ul>
+				</div>
+				
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="vehicleNum" id="vehicleNum" placeholder="请输入车牌号码">
+					<input type="hidden"  class="" value="" name="vehicleId" id="vehicleId">
+					<ul class="show_list" id="vehiclelist"></ul>
+	            </div>
+				
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="unitNum" id="unitNum"  placeholder="请输入车载电话">
+					<input type="hidden"  class="" value="" name="unitId" id="unitId">
+					<ul class="show_list" id="unitlist"></ul>	
+				</div>
+				
+				</div>	
+				<button type="submit" class="btn btn-default" id="query">查询</button>
+			    <button type="button" class="btn btn-default" id="btn_export">导出Excel</button>
+			</form>
+		    <div class="findAIP-down" id="dlg_findAIP">
+		    	
+		    </div>
+		</section>
+	   </div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/web/report/queryAIP.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<!-- <script type="text/javascript" src="../../js/sgAutoComplete.min.js"></script> -->
+	<script type="text/javascript" src="../../js/web/report/findArrearageInfosPage.js"></script>
+</body>
+</html>

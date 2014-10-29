@@ -1,0 +1,197 @@
+package com.chinagps.fee.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ldap.objectClasses.CommonCompany;
+import ldap.oper.OpenLdap;
+import ldap.oper.OpenLdapManager;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.chinagps.fee.comm.SystemConst;
+import com.chinagps.fee.comm.SystemException;
+import com.chinagps.fee.entity.po.Unit;
+import com.chinagps.fee.service.UnitService;
+import com.chinagps.fee.util.CreateExcel_PDF_CSV;
+import com.chinagps.fee.util.PageSelect;
+import com.chinagps.fee.util.StringUtils;
+import com.chinagps.fee.util.Utils;
+import com.chinagps.fee.util.page.Page;
+
+/**
+ * @Package:com.chinagps.fee.controller
+ * @ClassName:UnitController
+ * @Description:车台管理 控制层 ，从门店copy过来，以后可能会改成静态数据（搜索引擎）
+ * @author:zfy
+ * @date:2014-6-11 上午10:36:06
+ */
+@Controller
+@RequestMapping(value="/ba")
+public class UnitController extends BaseController {
+	protected static final Logger LOGGER = LoggerFactory
+			.getLogger(UnitController.class);
+
+	@Autowired
+	@Qualifier("UnitService")
+	private UnitService unitService; 
+
+	@RequestMapping(value = "/getUnits", method = RequestMethod.POST)
+	public @ResponseBody Page<Unit> getUnits(@RequestBody PageSelect<Unit> pageSelect, BindingResult bindingResult,HttpServletRequest request) throws SystemException {
+		Page<Unit> result=null;
+		try {
+			String companyid = (String) request.getSession().getAttribute(SystemConst.ACCOUNT_COMPANYID);
+			Long subco=null;
+			String orgId=(String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_ORGID);
+			if (StringUtils.isNotBlank(orgId)) {
+				OpenLdap openLdap = OpenLdapManager.getInstance();
+				//判断是否是分公司
+				int level=openLdap.getUserCompanyLevel(orgId);
+				if(level==0){//总部
+					
+				}else{
+					subco=Long.valueOf(companyid);
+				}
+			}
+			result = unitService.search(pageSelect, subco);
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	/**
+	 * @Title:findUnitInNets
+	 * @Description:查询入网车辆列表  入网明细表
+	 * @param pageSelect
+	 * @param request
+	 * @return
+	 * @throws SystemException
+	 */
+	@RequestMapping(value = "/findUnitInNets")
+	public @ResponseBody
+	Page<HashMap<String, Object>> findUnitInNets(@RequestBody PageSelect<Map<String, Object>> pageSelect,
+			HttpServletRequest request) throws SystemException {
+		Page<HashMap<String, Object>> results = null;
+		try {
+			if (pageSelect != null) {
+				if (pageSelect.getFilter() == null) {
+					pageSelect.setFilter(new HashMap<String, Object>());
+				}
+				String userId = (String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_ID);
+				String companyId = (String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_COMPANYID);
+				if (StringUtils.isNotBlank(userId)) {
+					OpenLdap openLdap = OpenLdapManager.getInstance();
+					//判断是否是分公司
+					int level=openLdap.getUserCompanyLevel( (String) request.getSession().getAttribute(
+								SystemConst.ACCOUNT_ORGID));
+					if(level==0){//总部
+						
+					}else{//分公司或者营业处
+						if(StringUtils.isNotBlank(companyId)){
+							pageSelect.getFilter().put("subcoNo", Long.valueOf(companyId));
+						}
+						
+					}
+				}
+			}
+			results = unitService.findUnitInNetsBypage(pageSelect);
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			// 打印日志
+			e.printStackTrace();
+			// 同时把异常抛到前台
+			//throw new SystemException();
+		}
+		return results;
+	}
+	@RequestMapping(value = "/exportExcel4UnitInNets")
+	public void exportExcel4UnitInNets(HttpServletRequest request,HttpServletResponse response) throws SystemException {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("导出入网明细表 开始");
+		}
+		try {
+			//条件
+			Map returnMap =   parseReqParam2(request);
+			String orgId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_ORGID);
+			String companyId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_COMPANYID);
+			OpenLdap openLdap = OpenLdapManager.getInstance();
+			//判断是否是分公司
+			int level=openLdap.getUserCompanyLevel(orgId);
+			if(level==0){//总部
+				
+			}else{//分公司或者营业处
+				if(StringUtils.isNotBlank(companyId)){
+					returnMap.put("subcoNo", Long.valueOf(companyId));
+				}
+			}
+			List<HashMap<String, Object>> results = unitService.findAllUnitInNets(returnMap);
+			String[][] title = {{"序号","10"},{"安装日期","15"},{"开通日期","15"},{"销售经理","10"},{"客户名称","20"},{"车牌号码","20"},{"车载号码","20"},{"产品类型","10"},{"销售网点","10"},{"服务费","10"},{"SIM卡流量费","15"},{"服务截止日期","15"}};
+			int columnIndex=0;
+			List valueList = new ArrayList();
+			HashMap<String, Object> valueData = null;
+			String[] values = null;
+			int listLenth=results.size();
+			int titleLength=title.length;
+			for(int i=0; i<listLenth; i++){
+				values = new String[titleLength];
+				valueData = results.get(i);
+				columnIndex=0;
+				values[columnIndex]  = (i+1)+"";
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("fixTime"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("serviceDate"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("sales"));
+				columnIndex++;
+				values[columnIndex] = Utils.clearNull(valueData.get("customerName"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("plateNo"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("callLetter"))+" ";
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("unittype"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("branch"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("realAmount1"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("realAmount2"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("feeSedate1"));
+				valueList.add(values);
+			}
+			//获得分公司中英文名称
+			CommonCompany commonCompany =  openLdap.getCompanyById(companyId);
+			CreateExcel_PDF_CSV.createExcel(valueList, response, "入网明细表", title,commonCompany.getCnfullname(),commonCompany.getEnfullname(),false);
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			e.printStackTrace();
+		}
+		
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("导出入网明细表 结束");
+		}
+	}
+}

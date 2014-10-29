@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>发票打印频率设定</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+
+</head>
+<body>
+	<div class="findLPayPrint jfxtTab">
+	  <div class="bills">
+		<section id="findLPayPrintContent"></section>
+	   </div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/print.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<script type="text/javascript">
+	(function($) {
+		var customerlist = {};//经办人 key:name,value:id
+		var unitlist={};
+		var vehiclelist={};
+	var loadSuccess = function(){
+ 		//填充编辑前的值
+ 		   if(editId && editObj){
+ 			  $("#inputCustomerName",$("#findLPayPrint_modify")).val(editObj.customerName);
+              $("#inputPrintFreq",$("#findLPayPrint_modify")).val(editObj.printFreq);
+              $("#inputCustomerId",$("#findLPayPrint_modify")).val(editObj.customerId); 	   
+ 		   }
+
+ 		  editId=null;
+ 		  editObj=null;
+ 		  
+ 	   }
+
+    var winClose3 = function() {
+		$(document).sgWindow('close', {
+			id : 'modify_findLPayPrint'
+		});
+	}
+
+
+	var savebill1 = function() {
+		//修改打印频率
+		var params = {};
+		var url = '../../pay/updatePrintFreqByCustomerId';
+
+		params.printFreq = $('#inputPrintFreq', '#findLPayPrint_modify').val();
+		params.customerId = $('#inputCustomerId', '#findLPayPrint_modify').val();
+		$(document).sgConfirm({
+			text: '确定修改打印频率吗?',
+			cfn: function(r) {
+				if (r) {
+
+					$.ajax({
+						type: 'post',
+						async: false,
+						contentType: 'application/json',
+						dataType: 'json',
+						url: url,
+						data: JSON.stringify(params),
+						success: function(data) {
+							if (data) {
+								if (data.success) {
+
+									$('#findLPayPrintContent').sgDatagrid('reload', 'sgDatagrid');
+
+								}
+								$(document).sgPup({
+									message: 'message_alert',
+									text: data.msg
+								});
+							}
+						},
+						error: function(res, error) {
+							alert(res.responseText);
+						}
+					});
+				}
+			}
+		});
+
+		$('#findLPayPrint_modify').unbind(); //以下两行可以阻止提交2次，暂时注释，也不会提交2次
+		$(document).sgWindow('close', {
+			id: 'modify_findLPayPrint'
+		});
+		return false;
+	};	
+
+
+	var modifyItem = function() {
+	    	 	var obj = $('#findLPayPrintContent');
+		        var bDiv = $('.bDiv',obj);
+		        if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length>1){
+		            $(document).sgPup({message:'message_info',text: "只能选择一条记录！"});
+		        }else if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length==0){
+		            $(document).sgPup({message:'message_info',text: "请选择一个选项！"});
+		        }else if($('input[type=checkbox][checked=checked]',bDiv)!=null&&$('input[type=checkbox][checked=checked]',bDiv).length==1){
+		        	 $('input[type=checkbox][checked=checked]',bDiv).each(function(){
+			                if($(this).attr("checked")){  
+			                	editId=this.value;
+			                	editObj=$(this).data('data');
+				    			var defaults = {
+				    				title : '打印频率修改',
+				    				id : 'modify_findLPayPrint',
+				    				form : 'modify_findLPayPrint_form',
+				    				url : 'findLPayPrint_modify.html',
+				    				success: loadSuccess,
+				    				width : 300,
+				    				height : 180,
+				    				buttons : [ {
+				    					name : '修改',
+				    					type : 'submit',
+				    					onpress : savebill1
+				    				}, {
+				    					name : '关闭',
+				    					onpress : winClose3
+				    				}]
+				    			};
+				    			$(document).sgWindow(defaults);
+			                }
+			            });
+		   }else{
+			   $(document).sgPup({message:'message_info',text: "请选择一个选项！"});
+		    }
+    	
+	}	
+
+
+	
+	var defaults = {
+		title: "",
+		width: 1000,
+		height: 395,
+		url: '../../pay/findLPayPrint4PrintSetPage',
+		datatype: "json",
+		usepager: true,
+		rownumbers: true,
+		useRp: true,
+		colid: 'id', //主键
+		colModel: [{
+			display: '用户名称',
+			name: 'customerName',
+			width: 160,
+			sortable: false
+		}, {
+			display: '投递地址',
+			name: 'address',
+			width: 160,
+			sortable: false
+		}, {
+			display: '邮政编码',
+			name: 'postCode',
+			width: 160,
+			sortable: false
+		},{
+			display: '打印频率',
+			name: 'printFreq',
+			width: 160,
+			sortable: false
+		},{
+			display: '上次打印时间',
+			name: 'printTime',
+			width: 160,
+			sortable: false
+		},{
+			display: '上次扣款时间',
+			name: 'payTime',
+			width: 160,
+			sortable: false
+		},{
+			display: '已打印次数',
+			name: 'printNum',
+			width: 160,
+			sortable: false
+		}],
+
+		buttons: [{
+			name: '修改',
+			bclass: 'add',
+			onpress: modifyItem
+		}],
+		searchitems: [{
+			display: '用户名称',
+			value: '请输入用户名称',
+			name: 'customerName',
+			id:'customerId',
+			list: 'customerlist',
+			type: 'text',
+		},{
+			display: '车牌号', 
+			value: '请输入车牌号',
+			name: 'vehicleNum',
+			id:'vehicleId',
+			list: 'vehiclelist',
+			type: 'text'
+		},{
+			display: '车台号码', 
+			value: '请输入车台号码',
+			name: 'unitNum',
+			id:'unitId',
+			list: 'unitlist',
+			type: 'text'
+		}, ],
+		sortname: "id",
+		sortorder: "desc"
+	};
+	$('#findLPayPrintContent').sgDatagrid(defaults);
+	
+	
+	//用户名称
+	var checkUser = function(){
+		var params = {};
+		params.pageNo = 1;
+		params.pageSize = 10;
+		params.filter = {};
+		params.filter.customer_name = this.value;
+		var obj = $(this);
+		$.ajax({
+			  type : 'post', 
+			  async: true,   
+			  contentType : 'application/json',     
+			  dataType : 'json',     
+			  url : '../../ba/getCustomers',   
+			  data:JSON.stringify(params),
+			  success : function(data) {
+				  if(data){
+					  var manager = $("#customerName");		  
+					  if(manager){
+						  if(data.items.length>0){
+							  customerlist = {};
+							  $("#customerlist").empty();
+						  }
+						  $.each(data.items,function(k,v){
+							  var op = $("<option></option>");
+							  op.val(obj.val()+" "+v.customer_name);
+							  $("#customerlist").append(op);
+							  
+							  customerlist[v.customer_name] = v.customer_id;
+	 				  	 }); 
+						}
+				  }else{
+				  	$(document).sgPup({message:'message_info',text: data});
+				  }
+			  } ,     
+			  error : function(res,error) { 
+			  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+			  }    
+			});
+	}
+	//车台号码
+	var checkUnit = function(){
+		var params = {};
+		params.pageNo = 1;
+		params.pageSize = 10;
+		params.filter = {};
+		params.filter.call_letter = this.value;
+		var obj = $(this);
+		$.ajax({
+			  type : 'post', 
+			  async: true,   
+			  contentType : 'application/json',     
+			  dataType : 'json',     
+			  url : '../../ba/getUnits',   
+			  data:JSON.stringify(params),
+			  success : function(data) {
+				  if(data){
+					  var manager = $("#unitNum");		  
+					  if(manager){
+						  //if(data.items.length>0){
+							  unitlist = {};
+							  $("#unitlist").empty();
+						  //}
+						  $.each(data.items,function(k,v){
+							  var op = $("<option></option>");
+							  op.val(obj.val()+" "+v.call_letter);
+							  $("#unitlist").append(op);
+							  
+							  unitlist[v.call_letter] = v.unit_id;
+	 				  	 }); 
+						}
+				  }else{
+				  	$(document).sgPup({message:'message_info',text: data});
+				  }
+			  } ,     
+			  error : function(res,error) { 
+			  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+			  }    
+			});
+	}
+	//车牌号
+	var checkVehicle = function(){
+		var params = {};
+		params.pageNo = 1;
+		params.pageSize = 10;
+		params.filter = {};
+		params.filter.plate_no = this.value;
+		var obj = $(this);
+		$.ajax({
+			  type : 'post', 
+			  async: true,   
+			  contentType : 'application/json',     
+			  dataType : 'json',     
+			  url : '../../ba/getVehicles',   
+			  data:JSON.stringify(params),
+			  success : function(data) {
+				  if(data){
+					  var manager = $("#vehicleNum");		  
+					  if(manager){
+						  //if(data.items.length>0){
+							  vehiclelist = {};
+							  $("#vehiclelist").empty();
+						  //}
+						  $.each(data.items,function(k,v){
+							  var op = $("<option></option>");
+							  op.val(obj.val()+" "+v.plate_no);
+							  $("#vehiclelist").append(op);
+							  
+							  vehiclelist[v.plate_no.replace(/\s/g,'')] = v.vehicle_id;
+	 				  	 }); 
+						}
+				  }else{
+				  	$(document).sgPup({message:'message_info',text: data});
+				  }
+			  } ,     
+			  error : function(res,error) { 
+			  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+			  }    
+			});
+	}
+  //填充用户名称
+    $.ajax( {
+	  type : 'post', 
+	  async: false,   
+	  contentType : 'application/json',     
+	  dataType : 'json',     
+	  url : '../../ba/getCustomers',   
+	  data:JSON.stringify({pageNo:1,pageSize:10,filter:{}}),
+	  success : function(data) {
+		  if(data){
+			  var manager = $("#customerName");
+			  if(manager){
+				  if(data.items.length>0){
+					  customerlist = {};
+					  $("#customerlist").empty();
+				  }
+				  $.each(data.items,function(k,v){
+					  var op = $("<option></option>");
+					  op.val(v.customer_name);
+					  $("#customerlist").append(op);
+					  
+					  customerlist[v.customer_name] = v.customer_id;
+				  	 }); 
+				  manager.on('keyup',checkUser);
+				  manager.on('change',function(){
+					  	var strs = this.value.split(" ");
+								$(this).val(strs[strs.length-1]);
+								$("#customerId").val(customerlist[strs[strs.length-1]]);
+								if($(this).val().length==0 || $("#customerId").val().length==0){
+									$("#customerId").val("");
+									manager.val("");
+								}
+						
+					});
+
+				};
+		  }else{
+		  	$(document).sgPup({message:'message_info',text: data});
+		  }
+	  },     
+	  error : function(res,error) { 
+	  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+	  }    
+	});
+  //填充车台号码
+    $.ajax( {
+	  type : 'post', 
+	  async: false,   
+	  contentType : 'application/json',     
+	  dataType : 'json',     
+	  url : '../../ba/getUnits',   
+	  data:JSON.stringify({pageNo:1,pageSize:10,filter:{}}),
+	  success : function(data) {
+		  if(data){
+			  var manager = $("#unitNum");
+			  if(manager){
+				  if(data.items.length>0){
+					  unitlist = {};
+					  $("#unitlist").empty();
+				  }
+				  $.each(data.items,function(k,v){
+					  var op = $("<option></option>");
+					  op.val(v.call_letter);
+					  $("#unitlist").append(op);
+					  
+					  unitlist[v.call_letter] = v.unit_id;
+				  	 }); 
+				  manager.on('keyup',checkUnit);
+				  manager.on('change',function(){
+					  	var strs = this.value.split(" ");
+								$(this).val(strs[strs.length-1]);
+								$("#unitId").val(unitlist[strs[strs.length-1]]);
+								if($(this).val().length==0 || $("#unitId").val().length==0){
+									$("#unitId").val("");
+									manager.val("");
+								}
+						
+					});
+
+				};
+		  }else{
+		  	$(document).sgPup({message:'message_info',text: data});
+		  }
+	  },     
+	  error : function(res,error) { 
+	  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+	  }    
+	});
+  //填充车牌号
+    $.ajax( {
+	  type : 'post', 
+	  async: false,   
+	  contentType : 'application/json',     
+	  dataType : 'json',     
+	  url : '../../ba/getVehicles',   
+	  data:JSON.stringify({pageNo:1,pageSize:10,filter:{}}),
+	  success : function(data) {
+		  if(data){
+			  var manager = $("#vehicleNum");
+			  if(manager){
+				  if(data.items.length>0){
+					  vehiclelist = {};
+					  $("#vehiclelist").empty();
+				  }
+				  $.each(data.items,function(k,v){
+					  var op = $("<option></option>");
+					  op.val(v.plate_no.replace(/\s/g,''));
+					  $("#vehiclelist").append(op);
+					  
+					  vehiclelist[v.plate_no.replace(/\s/g,'')] = v.vehicle_id;
+				  	 }); 
+				  manager.on('keyup',checkVehicle);
+				  manager.on('change',function(){
+					  	var strs = this.value.split(" ");
+								$(this).val(strs[strs.length-1]);
+								$("#vehicleId").val(vehiclelist[strs[strs.length-1]]);
+								if($(this).val().length==0 || $("#vehicleId").val().length==0){
+									$("#vehicleId").val("");
+									manager.val("");
+								}
+						
+					});
+
+				};
+		  }else{
+		  	$(document).sgPup({message:'message_info',text: data});
+		  }
+	  },     
+	  error : function(res,error) { 
+	  	     if(res && res.responseText){ $(document).sgPup({message:'message_info',text: res.responseText});}     
+	  }    
+	});
+})(jQuery);		
+	</script>
+</body>
+</html>

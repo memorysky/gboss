@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>打印处理</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+	<div class="findPrintsPage jfxtTab">
+	  <div class="bills">
+		<section id="findPrintsPageContent">
+			<article class="fpp-query clearfix">
+				<form class="form-horizontal clearfix">
+				  <fieldset>
+				    <div class="form-group col-sm-5">
+				      <div class="radio control-label col-sm-4 col-md-3">
+				         <label>
+				            	付费时间段：
+				         </label>
+				      </div>
+				      <div class="col-sm-8">
+				        <input type="date" class="form-control" id="inputStart" name="startDate">
+				        <input type="date" class="form-control" id="inputEnd" name="endDate">
+				      </div>
+				    </div>
+				    <div class="form-group col-sm-4 col-md-4" style="padding-top:2px;height:31px; border-left: 1px dashed  #CFCFCF;border-top: 1px dashed  #CFCFCF;border-bottom:1px dashed  #CFCFCF; ">
+				    	<div class="checkbox col-sm-4 col-md-3 control-label">
+				          <label>
+				            <input type="checkbox" class="ckb" name="ckb_type" id="ckb_changeId">过滤：
+				          </label>
+				          </div>
+				          <div class="col-sm-3 col-md-3 ">
+				           <select id="changeId">
+				          	<option value="1">客户名称</option>
+				          	<option value="2">车牌号码</option>
+				          	<option value="3">车载电话</option>
+				          	<option value="4">合同号</option>
+				          </select>
+				          </div>
+ 						<div class="col-sm-5 col-md-6 searchDis">
+				        <input type="text" class="form-control inputText" style="" autocomplete="on">
+				        <input type="hidden"class="inputTextId">
+				        <ul class="show_list"></ul>
+				      </div>
+				    </div>
+				     <div class="form-group col-sm-3" style="padding-top:2px ;height:31px;border-right: 1px dashed  #CFCFCF;border-top: 1px dashed  #CFCFCF;border-bottom:1px dashed  #CFCFCF;">
+				     <button class="btn btn-default" type="button" id="btn_print_history">查询打印记录</button> 
+				     </div>
+				     
+				    <div class="form-group col-sm-5">
+				    	<div class="checkbox col-sm-4 col-md-3 control-label">
+				          <label>
+				            <input type="checkbox" class="ckb" name="ckb_type" id="ckb_isDelivery">投递类型：
+				          </label>
+				        </div>
+				      <div class="col-sm-2">
+				          <select id="selectId" name="isDelivery">
+				          	<!-- <option value="0">不投递</option> -->
+				          	<option value="1">平邮</option>
+				          	<option value="2">重点投递</option>
+				          	<!-- <option value="3">电子账单</option> -->
+				          </select>
+				      </div>
+				      
+				    </div>
+				    <div class="form-group col-sm-4">
+				      <div class="checkbox col-sm-4 col-md-3 control-label" >
+				          <label>
+				            <input type="checkbox" class="ckb" name="ckb_type" id="ckb_printNum"> 发票类型：
+				          </label>
+				      </div>
+				      <div class="col-sm-7">
+				        <div class="radio col-sm-7">
+				          <label>
+				            <input type="radio"  name="printNum" id="Radios3" checked="" value="0">
+				                                     第一次打印
+				          </label>
+				        </div>
+				        <div class="radio col-sm-5">
+				          <label>
+				            <input type="radio" name="printNum" id="Radios4" value="1">
+				                                    补打
+				          </label>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="col-sm-3">
+				      	<button type="submit" id="search" class="btn btn-primary">查询</button>
+				        <button class="btn btn-default">重置</button>
+				      </div>
+				  </fieldset>
+				</form>  
+				      <div class="cleafix form-group col-sm-12">
+				      <p class="text-muted">
+				        说明：1、只有前面的复选框选中后，后面的条件才起作用(只针对查询)；   2、打印记录如果超过10条，建议导出Excel或者选择word的打印方式再打印。   
+				      </p>
+				      </div>
+				      
+				       <!-- <div class="form-group col-sm-5 clearfix">
+				      <div class="col-sm-4 control-label" style="text-align: right;">
+				          <label>
+				                客户类型：
+				          </label>
+				      </div>
+				      <div class="col-sm-8 clearfix ">
+				           <select id="custType" name="custType">
+				          	<option value="0">私家车</option>
+				          	<option value="1">集客</option>
+				          	<option value="2">担保公司</option>
+				          </select>
+				      </div>
+				    </div>	 -->
+				      
+				      <div class="form-group col-sm-5 clearfix">
+				      <div class="checkbox col-sm-4 control-label" >
+				          <label>
+				                 发票打印方式：
+				          </label>
+				      </div>
+				      <div class="col-sm-8 clearfix ">
+				        <div class="radio col-sm-7">
+				          <label>
+				            <input type="radio"  name="printFun"   value="1">
+				            word
+				          </label>
+				        </div>
+				        <div class="radio col-sm-5">
+				          <label>
+				            <input type="radio" name="printFun" checked="checked" value="0">
+				                                  网页
+				          </label>
+				        </div>
+				      </div>
+				    </div>			
+			</article>
+			<article id="fpp-result">
+				
+			</article>
+		</section>
+	   </div>
+	</div>
+	<!-- 打印iframe -->
+	<iframe id="ifm_print_print" name="ifm_print_print" style="display: none"></iframe>
+	
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/web/invoice/printD.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<script type="text/javascript" src="../../js/LodopFuncs.js"></script>
+	<!-- <script type="text/javascript" src="../../js/sgAutoComplete.min.js"></script> -->
+	<script type="text/javascript" src="../../js/web/invoice/findPrintsPage.js"></script>
+</body>
+</html>

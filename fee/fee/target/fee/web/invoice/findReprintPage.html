@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>客户申请发票补打</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+	<div class="findReprintPage jfxtTab">
+	  <div class="bills">
+		<section id="findReprintPageContent">
+			<article class="fpp-query">
+				<form class="form-horizontal">
+				  <fieldset class="clearfix">
+				      <div class="form-group col-sm-6 col-md-5">
+				      <div class="radio control-label col-sm-3">
+				         <label>
+				            	请求时间段：
+				         </label>
+				      </div>
+				      <div class="col-sm-8">
+				        <input type="date" class="form-control" id="inputStart" placeholder="输入起始日期" name="startDate">
+				        <input type="date" class="form-control" id="inputEnd" placeholder="输入终结日期" name="endDate">
+				      </div>
+				    </div>
+				    <div class="form-group col-sm-4">
+				        <div class="radio col-sm-4">
+				          <label>
+				            <input type="radio" name="invoiceType" id="invoiceType0" value="0" checked="">
+				                                     最近请求
+				          </label>
+				        </div>
+				        <div class="radio col-sm-4">
+				          <label>
+				            <input type="radio" name="invoiceType" id="invoiceType1" value="1">
+				                                    已补打
+				          </label>
+				        </div>
+				        <div class="radio col-sm-4">
+				          <label>
+				            <input type="radio" name="invoiceType" id="invoiceType2" value="2">
+				                                    已删除
+				          </label>
+				        </div>
+				    </div>
+				    <div class="form-inline col-md-7 col-sm-9">
+				    
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="customerName" id="customerName" placeholder="请输入客户名称">
+					<input type="hidden" value="" name="customerId" id="customerId">
+					<ul class="show_list" id="customerlist"></ul>
+				</div>
+				
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="vehicleNum" id="vehicleNum" placeholder="请输入车牌号码">
+					<input type="hidden"  value="" name="vehicleId" id="vehicleId">
+					<ul class="show_list" id="vehiclelist"></ul>
+	            </div>
+				
+				<div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="unitNum" id="unitNum"  placeholder="请输入车载电话">
+					<input type="hidden"  value="" name="unitId" id="unitId">
+					<ul class="show_list" id="unitlist"></ul>	
+				</div>
+				
+				 <div class="searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="payCtNo" id="payCtNo" placeholder="请输入托收合同">
+					<input type="hidden"   value="" name="collectionId" id="collectionId">
+					<ul class="show_list" id="payCtNolist"></ul>
+				</div>
+				</div>
+				    <div class="form-inline col-md-5 col-sm-3">
+				      	<button type="submit" id="search" class="btn btn-primary">查询</button>
+				        <button class="btn btn-default">重置</button>
+				    </div>	
+				    <div class="col-sm-12 cleafix">
+				       <!--  <h7 class="col-sm-1 text-muted">说明：</h7>
+				      	<p class="col-sm-5 text-muted">1、当选中“最近请求”项时只查出记录中没有查询或打印的数据</p>
+				      	<p class="col-sm-6 text-muted">2、当选中“已补打”和“已删除”时请求时间段将起作用</p> -->
+				      <p class="text-muted">	说明：1、当选中“最近请求”项时只查出记录中没有查询或打印的数据；2、当选中“已补打”和“已删除”时请求时间段将起作用；
+				      	3、打印记录如果超过10条，建议导出Excel或者选择word的打印方式再打印。
+				      	</p>
+				     </div>
+				      <div class="form-group col-sm-5 clearfix">
+				      <div class="checkbox col-sm-4 control-label" >
+				          <label>
+				                 发票打印方式：
+				          </label>
+				      </div>
+				      <div class="col-sm-8 clearfix ">
+				        <div class="radio col-sm-7">
+				          <label>
+				            <input type="radio"  name="printFun"   value="1">
+				            word
+				          </label>
+				        </div>
+				        <div class="radio col-sm-5">
+				          <label>
+				            <input type="radio" name="printFun"  checked="checked" value="0">
+				                                  网页
+				          </label>
+				        </div>
+				      </div>
+				    </div>	
+				  </fieldset>
+				</form>				
+			</article>
+			<article id="frpp-result">
+				
+			</article>
+		</section>
+	   </div>
+	</div>
+	<!-- 打印iframe -->
+	<iframe id="ifm_print_reprint" name="ifm_print_reprint" style="display: none"></iframe>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/web/invoice/printR.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<script type="text/javascript" src="../../js/LodopFuncs.js"></script>
+	<!-- <script type="text/javascript" src="../../js/sgAutoComplete.min.js"></script> -->
+	<script type="text/javascript" src="../../js/web/invoice/findReprintPage.js"></script>
+</body>
+</html>

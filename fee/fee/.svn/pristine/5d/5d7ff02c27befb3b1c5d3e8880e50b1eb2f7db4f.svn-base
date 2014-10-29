@@ -1,0 +1,1309 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=utf-8" ><title>用户操作说明书</title><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8</w:DrawingGridVerticalSpacing><w:View>Web</w:View><w:Compatibility><w:DontGrowAutofit/><w:BalanceSingleByteDoubleByteWidth/><w:DoNotExpandShiftReturn/><w:UseFELayout/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="156" ><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Normal" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 4" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 5" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 6" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 7" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 8" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 9" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 1" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 4" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 5" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 6" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 7" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 8" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 9" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 1" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 4" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 5" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 6" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 7" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 8" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 9" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal Indent" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote text" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation text" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="header" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footer" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index heading" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  QFormat="true"  Name="caption" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of figures" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope address" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope return" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote reference" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation reference" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="line number" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="page number" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote reference" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote text" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of authorities" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="macro" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toa heading" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 4" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 5" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 4" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 5" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 4" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 5" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Closing" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Signature" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Default Paragraph Font" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 4" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 5" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Message Header" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Salutation" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Date" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Note Heading" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 2" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 3" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Block Text" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Hyperlink" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="FollowedHyperlink" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Document Map" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Plain Text" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="E-mail Signature" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal (Web)" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Acronym" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Address" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Cite" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Code" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Definition" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Keyboard" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Preformatted" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Sample" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Typewriter" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Variable" ></w:LsdException><w:LsdException Locked="false"  Priority="99"  Name="Normal Table" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation subject" ></w:LsdException><w:LsdException Locked="false"  Priority="99"  Name="No List" ></w:LsdException><w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Balloon Text" ></w:LsdException></w:LatentStyles></xml><![endif]--><style>
+html { overflow-y:auto; }
+@font-face{
+font-family:"Times New Roman";
+}
+
+@font-face{
+font-family:"宋体";
+}
+
+@font-face{
+font-family:"Wingdings";
+}
+
+@font-face{
+font-family:"Cambria";
+}
+
+@font-face{
+font-family:"Arial";
+}
+
+@font-face{
+font-family:"黑体";
+}
+
+@font-face{
+font-family:"Symbol";
+}
+
+@list l0:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l1:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:21.0000pt;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level2{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:42.0000pt;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level3{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F075;
+mso-level-tab-stop:63.0000pt;
+mso-level-number-position:left;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level4{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:84.0000pt;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level5{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:105.0000pt;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level6{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F075;
+mso-level-tab-stop:126.0000pt;
+mso-level-number-position:left;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level7{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:147.0000pt;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level8{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:168.0000pt;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l1:level9{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F075;
+mso-level-tab-stop:189.0000pt;
+mso-level-number-position:left;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l2:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1）";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:39.3000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l2:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:210.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l3:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:21.0000pt;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l3:level2{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:42.0000pt;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l3:level3{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F0D8;
+mso-level-tab-stop:63.0000pt;
+mso-level-number-position:left;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l3:level4{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F0B2;
+mso-level-tab-stop:84.0000pt;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l3:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:105.0000pt;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l3:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:126.0000pt;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l3:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:147.0000pt;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l3:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:168.0000pt;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l3:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:189.0000pt;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l4:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l5:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F075;
+mso-level-tab-stop:42.1000pt;
+mso-level-number-position:left;
+margin-left:42.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level2{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:63.1000pt;
+mso-level-number-position:left;
+margin-left:63.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level3{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F075;
+mso-level-tab-stop:84.1000pt;
+mso-level-number-position:left;
+margin-left:84.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level4{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:105.1000pt;
+mso-level-number-position:left;
+margin-left:105.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level5{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:126.1000pt;
+mso-level-number-position:left;
+margin-left:126.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level6{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F075;
+mso-level-tab-stop:147.1000pt;
+mso-level-number-position:left;
+margin-left:147.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level7{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:168.1000pt;
+mso-level-number-position:left;
+margin-left:168.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level8{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06E;
+mso-level-tab-stop:189.1000pt;
+mso-level-number-position:left;
+margin-left:189.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l5:level9{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F075;
+mso-level-tab-stop:210.1000pt;
+mso-level-number-position:left;
+margin-left:210.1000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l6:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.";
+mso-level-tab-stop:28.3500pt;
+mso-level-number-position:left;
+margin-left:28.3500pt; text-indent:-28.3500pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.";
+mso-level-tab-stop:35.4500pt;
+mso-level-number-position:left;
+margin-left:35.4500pt; text-indent:-35.4500pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.";
+mso-level-tab-stop:42.5500pt;
+mso-level-number-position:left;
+margin-left:42.5500pt; text-indent:-42.5500pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.";
+mso-level-tab-stop:49.6000pt;
+mso-level-number-position:left;
+margin-left:49.6000pt; text-indent:-49.6000pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6.";
+mso-level-tab-stop:56.7000pt;
+mso-level-number-position:left;
+margin-left:56.7000pt; text-indent:-56.7000pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6.%7.";
+mso-level-tab-stop:63.8000pt;
+mso-level-number-position:left;
+margin-left:63.8000pt; text-indent:-63.8000pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6.%7.%8.";
+mso-level-tab-stop:70.9000pt;
+mso-level-number-position:left;
+margin-left:70.9000pt; text-indent:-70.9000pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l6:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6.%7.%8.%9.";
+mso-level-tab-stop:77.9500pt;
+mso-level-number-position:left;
+margin-left:77.9500pt; text-indent:-77.9500pt; margin-bottom:0pt; margin-top:0pt; font-family:'宋体'; }
+
+@list l7:level1{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l8:level1{
+mso-level-number-format:chinese-counting;
+mso-level-suffix:none;
+mso-level-text:"（%1）";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; margin-left:0.0000pt;
+font-family:'宋体'; }
+
+@list l9:level1{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l10:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l11:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l12:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l13:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l14:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l15:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l16:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l17:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l18:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l19:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l20:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:21.2500pt;
+mso-level-number-position:left;
+margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:42.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:63.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:84.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:105.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:126.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:147.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l21:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:189.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l22:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l23:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l24:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l25:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l26:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l27:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l28:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l29:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Wingdings'; }
+
+@list l30:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+@list l31:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; font-family:'Times New Roman'; }
+
+p.p0{
+margin:0pt;
+margin-bottom:0.0001pt;
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+font-size:10.5000pt; font-family:'Times New Roman'; }
+
+h1{
+margin-left:21.2500pt;
+text-indent:-21.2500pt;
+margin-bottom:16.5000pt;
+margin-top:17.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:240%;
+font-weight:bold; font-size:22.0000pt; font-family:'Times New Roman'; }
+
+h2{
+margin-left:28.3500pt;
+text-indent:-28.3500pt;
+margin-bottom:13.0000pt;
+margin-top:13.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:172%;
+font-weight:bold; font-size:16.0000pt; font-family:'Arial'; }
+
+h3{
+margin-left:35.4500pt;
+text-indent:-35.4500pt;
+margin-bottom:13.0000pt;
+margin-top:13.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:172%;
+font-weight:bold; font-size:16.0000pt; font-family:'Times New Roman'; }
+
+h4{
+margin-left:42.5500pt;
+text-indent:-42.5500pt;
+margin-bottom:14.5000pt;
+margin-top:14.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:155%;
+font-weight:bold; font-size:14.0000pt; font-family:'Arial'; }
+
+h5{
+margin-left:49.6000pt;
+text-indent:-49.6000pt;
+margin-bottom:14.5000pt;
+margin-top:14.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:155%;
+font-weight:bold; font-size:14.0000pt; font-family:'Times New Roman'; }
+
+h6{
+margin-left:56.7000pt;
+text-indent:-56.7000pt;
+margin-bottom:3.2000pt;
+margin-top:12.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:132%;
+font-weight:bold; font-size:12.0000pt; font-family:'Arial'; }
+
+p.p7{
+margin-left:63.8000pt;
+text-indent:-63.8000pt;
+margin-bottom:3.2000pt;
+margin-top:12.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:132%;
+font-weight:bold; font-size:12.0000pt; font-family:'Times New Roman'; }
+
+p.p8{
+margin-left:70.9000pt;
+text-indent:-70.9000pt;
+margin-bottom:3.2000pt;
+margin-top:12.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:132%;
+font-size:12.0000pt; font-family:'Arial'; }
+
+p.p9{
+margin-left:77.9500pt;
+text-indent:-77.9500pt;
+margin-bottom:3.2000pt;
+margin-top:12.0000pt;
+page-break-after:void;
+text-align:justify;
+line-height:132%;
+font-size:10.5000pt; font-family:'Arial'; }
+
+span.10{
+font-family:'Times New Roman'; }
+
+span.15{
+font-family:'Times New Roman'; }
+
+span.16{
+color:rgb(0,0,255); text-decoration:underline ;font-family:'Times New Roman'; }
+
+span.17{
+font-weight:bold; font-size:16.0000pt; font-family:'Cambria'; }
+
+p.p18{
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+font-size:10.5000pt; font-family:'Times New Roman'; }
+
+p.p19{
+margin-left:42.0000pt;
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+font-size:10.5000pt; font-family:'Times New Roman'; }
+
+p.p20{
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+font-weight:bold; font-size:10.5000pt; font-family:'Times New Roman'; }
+
+p.p21{
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:left;
+font-size:9.0000pt; font-family:'Times New Roman'; }
+
+p.p22{
+margin-bottom:3.0000pt;
+margin-top:12.0000pt;
+text-align:center;
+font-weight:bold; font-size:16.0000pt; font-family:'Cambria'; }
+
+p.p23{
+margin-left:21.0000pt;
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+font-size:10.5000pt; font-family:'Times New Roman'; }
+
+p.p24{
+margin-left:63.0000pt;
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+font-size:10.5000pt; font-family:'Times New Roman'; }
+
+p.p25{
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+background:rgb(0,0,128);
+font-size:10.5000pt; font-family:'Times New Roman'; }
+
+p.p26{
+margin-bottom:0pt;
+margin-top:0pt;
+border-bottom:0.7500pt solid rgb(0,0,0);
+mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+padding:0pt 0pt 1pt 0pt ;
+text-align:center;
+font-size:9.0000pt; font-family:'Times New Roman'; }
+
+p.p27{
+text-indent:21.0000pt;
+margin-bottom:0pt;
+margin-top:0pt;
+text-align:justify;
+font-size:10.5000pt; font-family:'Times New Roman'; }
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+margin-top:72.0000pt;
+margin-bottom:72.0000pt;
+margin-left:89.8500pt;
+margin-right:89.8500pt;
+size:595.3000pt 841.9000pt;
+layout-grid:15.6000pt;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:21pt; text-justify-trim:punctuation;overflow-y:scroll;height:625px;" ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt; " ><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:center; " ><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >目&nbsp;录</span>
+<a style="float:right;text-decoration: underline;color:blue;cursor:hand;" href="../../doc/book.doc" target="_top" >用户操作手册下载</a>
+
+</p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p20  style="margin-bottom:0pt; margin-top:0pt; " ><span><span><a href="#_Toc20356 " ><span style="mso-spacerun:'yes'; font-weight:bold; font-size:10.5000pt; font-family:'宋体'; " >1.&nbsp;</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:10.5000pt; font-family:'宋体'; " >系统功能介绍</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:10.5000pt; font-family:'Times New Roman'; " >2</span></span></a></span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc8708 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.1.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >系统登陆</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >2</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc14824 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.2.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >2</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc25538 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.2.1.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >银行托收数据下载</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >2</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc29337 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.2.2.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >金融中心数据上传</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >3</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc15889 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.2.3.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >银盛托收数据上传</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >4</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc23580 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.2.4.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >银联托收数据上传</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >5</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc1878 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.2.5.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收资料查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >5</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc8585 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.3.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >发票</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >6</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc15228 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.3.1.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >发票打印</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >6</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc16239 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.3.2.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >发票打印异常处理</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >9</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc23522 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.3.3.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >发票补打</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >9</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc29842 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.4.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >报表</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >11</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc27543 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.4.1.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >欠费用户查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >11</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc25019 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.4.2.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >收费记录查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >12</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc21098 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.4.3.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收情况查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >12</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc6394 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.5.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >设置</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >13</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc1444 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.5.1.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >公司托收账号设置</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >13</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc8200 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.5.2.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >服务项管理</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >14</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc2915 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.6.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >帮助</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >15</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc18093 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.6.1.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >备忘录管理</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >15</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc21995 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.6.2.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >操作日志查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >17</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc31058 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.6.3.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >常见问题</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >18</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc7787 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.6.4.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >用户手册</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >18</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p19  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc14631 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1.6.5.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >关于</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >18</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc25354 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.7.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >设为主页</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >19</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p23  style="margin-bottom:0pt; margin-top:0pt; " ><span><a href="#_Toc28300 " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'黑体'; " >1.8.&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >系统退出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >&#9;</span><span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >19</span></span></a></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><h1 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level1 lfo1; " ><a name="_Toc176855891" ></a><![if !supportLists]><span style="font-weight:bold; font-size:22.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:22.0000pt; font-family:'宋体'; " ><a name="_Toc20356" >系统功能介绍</a></span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:22.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h1><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc8708" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >系统</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >登陆</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >系统</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >是通过<font face="Times New Roman" >CAS</font><font face="宋体" >单点</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >的，经过了<font face="Times New Roman" >CAS</font><font face="宋体" >验证会跳转到权限管理系统的页面，如图：</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="220"  src="book.files/book1793.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc14824" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >托收</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >功能说明：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l9 level1 lfo2; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >a.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >下载</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >后生成的文件只可以做校验，不可以做任何修改，如发现生成的文件有误确需修改的，需要在计费系统中修改完成后重新下载</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l9 level1 lfo2; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >b.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >下载生成文件并送</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收机构</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >，而</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收机构</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >没有返回文件，这一段时间内不得修改</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >服务项</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >、服务截止时间、托收频率、托收银行、帐户、帐号、合同号等与托收有关的信息，如确需修改请先做记录，待</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收机构</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >返回文件并上传至计费系统后再做处理</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l9 level1 lfo2; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >c.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >下载生成文件并确定报送</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收机构</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >后应点击数据加锁，锁定数据库中的关键数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l9 level1 lfo2; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >d.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >选择起止日期，下载起止日期内需托收的文件，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " >日期是服务截止的日期</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l9 level1 lfo2; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >e.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >金融中心、银盛、银联<font face="Times New Roman" >3</font><font face="宋体" >个</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收机构</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >的数据文件格式不同；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l9 level1 lfo2; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >f.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >每个用户银行账号对应的托收的合同号最大托收金额有<font face="Times New Roman" >10000</font><font face="宋体" >元的限制，因为同一个合同号不能够超过</font><font face="Times New Roman" >10000</font><font face="宋体" >元，所以需要重新生成一个合同号，所以有可能此合同号和实际的合同号不一致；</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc25538" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.2.1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >银行托收数据下载</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;银行托收数据下载&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到&#8220;银行托收数据下载&#8221;页面，如果之前该页面已经打开过，则不再新增，否则新增一个</font><font face="Times New Roman" >tab</font><font face="宋体" >项显示该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="232"  src="book.files/book2252.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l10 level1 lfo3; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >初始化</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >分公司设置了哪几个有效的托收机构银行账号，下载时就只显示哪几个托收机构需要下载文件；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l10 level1 lfo3; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >下载</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >金融中心、银盛<font face="Times New Roman" >2</font><font face="宋体" >个托收机构都必须先下载交易文件，再下载总结文件；中国银联</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >只需下载一个托收文件；且只下载本分公司的托收数据，都能下载多次；可以按固定日期托收，固定托收日期在&#8220;设置&#8221;<font face="Times New Roman" >-&#62;</font><font face="宋体" >&#8220;分公司银行账号设置&#8221;中进行设置，如果不按固定日期托收，则在分公司银行账号设置的&#8220;是否固定托收&#8221;选择否，再保存即，下载时，服务截止日期就是到用户选择的日期。</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l10 level1 lfo3; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >3)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >数据锁添加</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收过程中，托收资料（包括托收服务截止时间、托收频率、托收银行、帐户、帐号、合同号等）不能修改，数据锁添加后，就将这些数据锁定，无法修改，直到上传完从托收机构传回的托收文件，解锁后才能修改；如果数据锁已添加，则&#8220;添加&#8221;按钮由&#8220;已加锁&#8221;的文本代替。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc29337" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.2.2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >金融中心数据上传</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;金融中心数据上传&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面（银盛、银联的托收数据下载页面类似）</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="176"  src="book.files/book2672.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l11 level1 lfo4; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >上传</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >必须选择成对的交易文件，总结文件同时上传；且可上传多次；上传的结果在页面中能显示；如下图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="153"  src="book.files/book2725.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l11 level1 lfo4; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >数据锁解锁</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >上传完所有的托收文件后（如果有其他托收机构，需要把其他托收机构的托收文件也上传完），才能点击解锁，解锁后托收资料方可修改；如果数据锁已解锁，则&#8220;解锁&#8221;按钮由&#8220;已解锁&#8221;的文本代替。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc15889" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.2.3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >银盛托收数据上传</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;银盛托收数据上传&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面（金融中心、银联的托收数据下载页面类似）</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="149"  src="book.files/book2892.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l12 level1 lfo5; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >上传</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >必须选择成对的交易文件，总结文件同时上传；且可上传多次；上传的结果在页面中能显示；如下图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="169"  src="book.files/book2945.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l12 level1 lfo5; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >数据锁解锁</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >上传完所有的托收文件后（如果有其他托收机构，需要把其他托收机构的托收文件也上传完），才能点击解锁，解锁后托收资料方可修改；如果数据锁已解锁，则&#8220;解锁&#8221;按钮由&#8220;已解锁&#8221;的文本代替。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc23580" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.2.4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >银联托收数据上传</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;银联托收数据上传&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="146"  src="book.files/book3092.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l13 level1 lfo6; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >上传</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >只需上传一个托收文件；且可上传多次；上传的结果在页面中能显示；如下图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="117"  src="book.files/book3135.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; mso-list:l13 level1 lfo6; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >数据锁解锁</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >上传完所有的托收文件后（如果有其他托收机构，需要把其他托收机构的托收文件也上传完），才能点击解锁，解锁后托收资料方可修改；如果数据锁已解锁，则&#8220;解锁&#8221;按钮由&#8220;已解锁&#8221;的文本代替。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc1878" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.2.5.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >托收资料</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >查询</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;托收资料查询&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="554"  height="241"  src="book.files/book3279.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l4 level1 lfo7; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入客户名称再按回车，自动搜索出模糊匹配的客户名称，选择某一个客户，将自动搜出该客户的托收信息（如果只查询出一个客户，按回车后将自动搜索出该客户的托收信息），车牌号码、车载电话搜索方式与之类似；将托收资料显示在下方；如果一个客户有多台车或者多个终端，则在下面的表格中分别列出各个终端的托收情况</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >如下图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="117"  src="book.files/book3439.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc8585" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >发票</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >功能说明：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; mso-list:l7 level1 lfo8; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >a.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印方式有</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >2<font face="宋体" >种：一种是</font><font face="Times New Roman" >word</font><font face="宋体" >的方式、一种是网页的方式；如果是</font><font face="Times New Roman" >word</font><font face="宋体" >的方式，将需要打印的数据安装套打格式保存在</font><font face="Times New Roman" >word</font><font face="宋体" >文件中，每个</font><font face="Times New Roman" >word</font><font face="宋体" >是</font><font face="Times New Roman" >1000</font><font face="宋体" >页数据，每一页是一条记录；最后将所有的</font><font face="Times New Roman" >word</font><font face="宋体" >打成一个压缩包，进行下载，用户下载后解压这个压缩包，再选择所有需要打印发票的</font><font face="Times New Roman" >word</font><font face="宋体" >文件，进行批量打印，当然也可以一个个</font><font face="Times New Roman" >word</font><font face="宋体" >文件进行打印；如果是网页的方式，则直接弹出打印预览页面，由于该打印用了打印控件，所以第一次需要安装打印控件（</font><font face="Times New Roman" >lodop</font><font face="宋体" >），且该打印控件只要安装一次即可，支持</font><font face="Times New Roman" >IE</font><font face="宋体" >、</font><font face="Times New Roman" >chrome</font><font face="宋体" >、</font><font face="Times New Roman" >Firefox</font><font face="宋体" >等主流浏览器，每一页也是一条记录；</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; mso-list:l7 level1 lfo8; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >b.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >如果用户的托收记录不需要邮寄，而是采取的电子邮件发送的方式，则需要设置邮箱，系统每月</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >1<font face="宋体" >号早上</font><font face="Times New Roman" >8</font><font face="宋体" >点会将用户的托收缴费记录发送至用户的邮箱。</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc15228" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.3.1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >发票打印</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;发票打印&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="257"  src="book.files/book3835.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询打印记录：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入客户名称或者车牌号码或者车载终端，点击&#8220;查询打印记录&#8221;，这一操作的执行条件由虚线框选，弹出历史打印机页面，再点击&#8220;查询&#8221;，可查询该用户之前的打印记录；如下图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="335"  src="book.files/book3929.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >不查询数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入查询条件，再点击&#8220;查询&#8221;才查询出需打印的数据（已托收成功，且需要投递的用户缴费数据）</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >如下图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="367"  src="book.files/book3997.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >3)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印本页记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印本页查询出的记录，如果打印发送是<font face="Times New Roman" >word</font><font face="宋体" >，下载是一个压缩后的文件，如下图所示：</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="304"  src="book.files/book4048.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >解压<font face="Times New Roman" >fee.zip</font><font face="宋体" >后是所有</font><font face="Times New Roman" >word</font><font face="宋体" >文件，</font><font face="Times New Roman" >word</font><font face="宋体" >文件中每一页是一条需要打印的记录；如果打印方式是网页的方式，弹出如下图所示打印预览界面：</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="393"  src="book.files/book4119.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:center; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击工具栏中&#8220;打印&#8221;，可以进行打印设置，再进行打印；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >4)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印本页选中记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >勾选表格前的复选框，再点击&#8220;打印本页选中记录&#8221;，过程与&#8220;打印本页记录&#8221;类似；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >5)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >清除选中记录打印标记</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >勾选表格前的复选框，再点击&#8220;清除选中记录打印标记&#8221;，将打印次数置为</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >0<font face="宋体" >；</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >6)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印本次查询到的所有记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >过程与&#8220;打印本页记录&#8221;类似；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >7)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >导出本次查询到的所有记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >导出<font face="Times New Roman" >Excel</font><font face="宋体" >，数据格式如下图所示：</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="76"  src="book.files/book4304.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc16239" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.3.2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >发票打印异常处理</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;发票打印异常处理&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="554"  height="374"  src="book.files/book4356.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l15 level1 lfo10; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >不查询数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入查询条件，再点击&#8220;查询&#8221;才查询出已打印过的数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l15 level1 lfo10; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >清除本页记录打印标记</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >将打印次数置为<font face="Times New Roman" >0</font><font face="宋体" >，再次查询将查询不到清除标记的记录，除非再次打印；</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l15 level1 lfo10; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >3)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >清除本页选中记录打印标记</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >勾选表格前的复选框，再点击&#8220;清除本页选中记录打印标记&#8221;，过程与&#8220;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >清除本页记录打印标记</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8221;类似；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l15 level1 lfo10; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >4)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >清除本次查询到的所有记录的打印标记</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >过程与&#8220;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >清除本页记录打印标记</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8221;类似；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc23522" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.3.3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >发票补打</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;客户申请发票补打&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="555"  height="377"  src="book.files/book4587.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l16 level1 lfo11; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >不查询数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入查询条件，再点击&#8220;查询&#8221;才查询出需补打（客户已申请补打）的数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l16 level1 lfo11; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >增加</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出新增客户申请补打页面，输入补打信息，再保存入库</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >新增页面如下所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="400"  height="275"  src="book.files/book4678.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l16 level1 lfo11; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >3)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >修改</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出修改客户申请补打页面，输入需要修改的补打信息，再保存入库</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >页面与新增类似；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l16 level1 lfo11; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >4)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印本页记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印查询出的本页记录，打印方式类似发票打印中的打印方式处理；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l16 level1 lfo11; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >5)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印本页选中记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >勾选表格前的复选框，再点击&#8220;打印本页选中记录&#8221;，过程与&#8220;打印本页记录&#8221;类似；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l16 level1 lfo11; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >6)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >删除选中记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >勾选表格前的复选框，再点击&#8220;删除选中记录&#8221;，将记录的&#8220;是否删除&#8221;状态改成&#8220;删除状态&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l16 level1 lfo11; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >7)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >打印本次查询到的所有记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >过程与&#8220;打印本页记录&#8221;类似；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l14 level1 lfo9; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >8)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >导出本次查询到的所有记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >导出<font face="Times New Roman" >Excel</font><font face="宋体" >，数据格式如下图所示：</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="76"  src="book.files/book4921.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc29842" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >报表</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc27543" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.4.1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >欠费用户查询</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;欠费用户查询&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="554"  height="211"  src="book.files/book4971.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l17 level1 lfo12; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >不查询数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入查询条件，再点击&#8220;查询&#8221;才查询出已欠费的用户计费数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >如下图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="207"  src="book.files/book5023.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l17 level1 lfo12; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >导出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >Excel</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >根据条件查询并导出数据到<font face="Times New Roman" >Excel</font><font face="宋体" >文件中，下载后的文件内容与表格中类似，如下图所示：</font></span><img width="554"  height="87"  src="book.files/book5075.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc25019" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.4.2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >收费记录查询</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;收费记录查询&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="554"  height="201"  src="book.files/book5122.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l18 level1 lfo13; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >不查询数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入查询条件，再点击&#8220;查询&#8221;才查询出收费记录数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l18 level1 lfo13; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >导出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >Excel</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >根据条件查询并导出数据到<font face="Times New Roman" >Excel</font><font face="宋体" >文件中，下载后的文件内容与表格中类似，如下图所示：</font></span><img width="554"  height="190"  src="book.files/book5214.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc21098" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.4.3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >托收情况查询</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;托收情况查询&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="554"  height="188"  src="book.files/book5261.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l19 level1 lfo14; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >不查询数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入查询条件，再点击&#8220;查询&#8221;才查询出托收情况的数据</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l19 level1 lfo14; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >导出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >Excel</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >根据条件查询并导出数据到<font face="Times New Roman" >Excel</font><font face="宋体" >文件中，下载后的文件内容与表格中类似，如下图所示：</font></span><img width="554"  height="205"  src="book.files/book5354.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc6394" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.5.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >设置</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc1444" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.5.1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >公司托收账号设置</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;托收情况查询&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="554"  height="156"  src="book.files/book5406.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l0 level1 lfo15; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >本分公司设置</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >托收银行账号</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；可以按条件组合查询；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l0 level1 lfo15; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >添</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >加&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出新增页面，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出如下所示页面：</span><img width="407"  height="308"  src="book.files/book5466.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >每个托收机构只有一个有效的银行代码、收付单位代码、收付代码；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l0 level1 lfo15; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >3)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;编辑&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >选择要编辑的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，弹出编辑页面，类似新增；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l0 level1 lfo15; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >4)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;删除&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出&#8220;删除后不可恢复，确定删除？&#8221;，点击&#8220;确定&#8221;，提示&#8220;操作成功！&#8221;，自动刷</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >新结果</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >列表；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l0 level1 lfo15; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >5)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;查看&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >明细</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >页面，显示</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >详细分公司银行账号</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >信息；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc8200" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.5.2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >服务项管理</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;服务项管理&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="233"  src="book.files/book5656.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l20 level1 lfo16; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >所有服务项列表</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；可以按条件组合查询；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l20 level1 lfo16; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >2)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >添</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >加&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出新增页面，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出如下所示页面：</span><img width="424"  height="277"  src="book.files/book5710.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l20 level1 lfo16; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >3)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;编辑&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >选择要编辑的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >记录</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，弹出编辑页面，类似新增；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l20 level1 lfo16; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >4)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;删除&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出&#8220;删除后不可恢复，确定删除？&#8221;，点击&#8220;确定&#8221;，提示&#8220;操作成功！&#8221;，自动刷</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >新结果</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >列表；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.2500pt; text-indent:-21.2500pt; margin-bottom:0pt; margin-top:0pt; text-align:left; mso-list:l20 level1 lfo16; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >5)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击&#8220;查看&#8221;按钮</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >弹出</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >明细</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >页面，显示</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >详细的服务项</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >信息；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc2915" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.6.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >帮助</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc18093" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.6.1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >备忘录管理</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >备忘录管理页面，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="200"  src="book.files/book5846.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >可以根据时间段，对备忘录进行查询。并可以对备忘录进行增加、删除操作。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:39.3000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l2 level1 lfo17; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >1）<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：在如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><img width="524"  height="37"  src="book.files/book5891.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >中选择好开始日期和结束日期，点击</span><img width="87"  height="27"  src="book.files/book5909.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮就可以查询。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:39.3000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l2 level1 lfo17; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >2）<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >增加，点击</span><img width="49"  height="21"  src="book.files/book5924.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，弹出增加页面，如图：&nbsp;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><img width="393"  height="193"  src="book.files/book5940.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><img width="384"  height="172"  src="book.files/book5942.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >输入备忘的信息，点击</span><img width="80"  height="26"  src="book.files/book5954.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，弹出操作成功提示框，完成添加。点击</span><img width="79"  height="26"  src="book.files/book5975.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >取消添加。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >另在屏幕的右上方也有备忘录增加的快捷的方式，如图所示：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><img width="554"  height="30"  src="book.files/book6010.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:39.3000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l2 level1 lfo17; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >3）<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >删除，在列表中选择要删除的备忘信息，点击</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;删除&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，弹出确认删除对话框，点击确认，就删除一条备忘信息了。如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><img width="554"  height="261"  src="book.files/book6069.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:39.3000pt; text-indent:-18.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l2 level1 lfo17; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'Times New Roman'; " ><span style='mso-list:Ignore; ' >4）<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >备忘提示：备忘提示显示在用户</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >成功以后的主页面上，用来提示用户的备忘信息，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><img width="416"  height="246"  src="book.files/book6113.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;不再提示&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，这条备忘信息下次不再提示。点击</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;关闭&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，关闭提示信息。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >注：一个用户只能有一条提示备忘信息。如果增加了新的备忘信息，新的备忘信息就是提示信息，原来的提示信息不再提示。如果新的备忘信息在提示时，点击</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;不再提示&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，新的备忘信息也将不再提示。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc21995" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.6.2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >操作日志查询</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击左边菜单中的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#8220;操作日志查询&#8221;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >右边的</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >tab<font face="宋体" >页定位到该页面</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >，如图</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><img width="554"  height="380"  src="book.files/book6292.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:21.0000pt; text-indent:-21.0000pt; margin-bottom:0pt; margin-top:0pt; mso-list:l21 level1 lfo18; " ><![if !supportLists]><span style="font-size:10.5000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1)<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >查询：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >默认查询</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >出前</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >10<font face="宋体" >条记录</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >；</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >可按条件组合查询。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-left:18.0000pt; margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc31058" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.6.3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >常见问题</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " >1:<font face="宋体" >深圳赛格运营支撑平台目前支持哪些浏览器？</font></span><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:24.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; line-height:19.2000pt; " ><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >答<font face="Arial" >:</font><font face="宋体" >目前深圳赛格运营支撑平台只支持谷歌浏览器</font><font face="Arial" >(chrome)</font><font face="宋体" >。因为平台采用了</font><font face="Arial" >HTML5</font><font face="宋体" >标签，基于不同的浏览器</font><font face="Arial" >HTML5</font><font face="宋体" >标签表现的形式相差比较明显。故我们选择谷歌浏览器作为本平台默认浏览器。所以用户使用谷歌浏览器时将达到最佳浏览效果。</font></span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " >2:<font face="宋体" >深圳赛格运营支撑平台目前支持哪些屏幕分辨率？</font></span><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:24.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; line-height:19.2000pt; " ><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >答<font face="Arial" >:</font><font face="宋体" >目前深圳赛格运营支撑平台支持</font><font face="Arial" >1024*768</font><font face="宋体" >以上的分辨率，为达到最佳浏览效果请用户将显示器调至</font><font face="Arial" >1024*768</font><font face="宋体" >以上分辨率。</font></span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " >3:<font face="宋体" >深圳赛格运营支撑平台使用了哪些</font><font face="Arial" >HTML5</font><font face="宋体" >标签？</font></span><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:24.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; line-height:19.2000pt; " ><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >答<font face="Arial" >:</font><font face="宋体" >目前深圳赛格运营支撑平台使用的</font><font face="Arial" >HTML5</font><font face="宋体" >标签主要在布局和表单这两大类上。</font></span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " >4:<font face="宋体" >在使用深圳赛格运营支撑平台的过程中遇到问题怎么办？</font></span><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:24.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; line-height:19.2000pt; " ><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >答<font face="Arial" >:</font><font face="宋体" >在使用深圳赛格运营支撑平台的过程中遇到问题时，首先请仔细阅读平台提供的用户使用手册，用户使用手册上详细说明了平台所有功能的使用步骤和情况。如果用户使用手册不能解决您的问题，请联系</font><font face="Arial" >XXXXXX</font><font face="宋体" >，或发邮件至</font><font face="Arial" >XXXX</font><font face="宋体" >。对于平台出现的问题对您的工作带来的影响，我们万分抱歉，并会在后续的维护工作尽快修改您反应的问题！谢谢！</font></span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " >5:<font face="宋体" >关于深圳赛格运营支撑平台统一权限</font></span><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " >系统</span><span style="mso-spacerun:'yes'; color:rgb(27,29,32); font-weight:bold; font-size:9.0000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="text-indent:24.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; line-height:19.2000pt; " ><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >答<font face="Arial" >:</font><font face="宋体" >深圳赛格运营支撑平台的</font></span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >和权限使用统一的权限</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >系统，这样做的好处是：当用户要操作多个系统时，不需要重复</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >。为用户更好的使用平台带来便利。也更方便管理用户的权限。在使用统一权限</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >系统时要注意的是：浏览器打开时，用户</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >只需要一次。如果用户长时间未操作<font face="Arial" >(</font><font face="宋体" >默认是</font><font face="Arial" >30</font><font face="宋体" >分钟未操作</font><font face="Arial" >)</font><font face="宋体" >，可能导致会话过期，需要重新</font></span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >。同时如果关闭了浏览器，再打开浏览器时也需要重新</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " >。</span><span style="mso-spacerun:'yes'; color:rgb(86,91,98); font-size:7.5000pt; font-family:'Arial'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc7787" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.6.4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >用户手册</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >用户操作手册，可以下载</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >word<font face="宋体" >格式的文件。</font></span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h3 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level3 lfo1; " ><a name="_Toc14631" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><span style='mso-list:Ignore; ' >1.6.5.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " >关于</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'宋体'; " ><o:p></o:p></span></h3><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><img width="554"  height="129"  src="book.files/book7048.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc25354" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.7.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >设为主页</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击图中五角星按钮，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><img width="554"  height="29"  src="book.files/book7070.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >&#9;</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >则可以把用户当前浏览的页面设为用户的主页。下次用户</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >后，显示的默认页面就是用户的主页。</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><h2 style="margin-bottom:0pt; margin-top:0pt; mso-list:l6 level2 lfo1; " ><a name="_Toc28300" ></a><![if !supportLists]><span style="font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><span style='mso-list:Ignore; ' >1.8.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " >系统退出</span><span style="mso-spacerun:'yes'; font-weight:bold; font-size:16.0000pt; font-family:'黑体'; " ><o:p></o:p></span></h2><p class=p0  style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; text-align:left; " ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >点击屏幕右上角</span><img width="20"  height="24"  src="book.files/book7130.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >按钮，确认退出后，就可以退出系统，并回到</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >登陆</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " >页面，如图：</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p></o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="297"  height="106"  src="book.files/book7160.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p><p class=p0  style="margin-bottom:0pt; margin-top:0pt; text-align:left; " ><img width="554"  height="220"  src="book.files/book7162.png" ><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; " ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body></html>

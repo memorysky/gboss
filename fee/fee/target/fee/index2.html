@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<title>ajax接口测试</title>
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	$('#btn_to').on('click',function(){
+		var url=$('#txt_url').val();
+		if(!url){
+			alert('请输入url');
+			return false;
+		}
+		var params={};
+		
+		var key=$('#txt_key').val();
+		if(key){
+			params[key]=$('#txt_value').val();
+		}
+		var arr=[];
+		arr.push(5);
+		arr.push(6);
+		arr.push(7);
+		arr.push(8);
+		arr.push(9);
+		arr.push(10);
+		params={paymentIds:arr,printType:1,printFun:1}
+		//params=JSON.stringify(params);
+		  $.ajax( {
+			  type : 'post', 
+			  async: false,   
+			  //contentType : 'application/json',     
+			  dataType : 'json',     
+			  url : url,  
+			 /*  xhrFields: {   
+				    withCredentials: true   
+				    } , */
+			  data:params,
+			  success : function(data) {
+				  if(data){
+					  try{
+						  alert(JSON.stringify(data));
+					  }catch(e){
+						  alert(data);
+					  }
+				  }else{
+					  alert(data);
+				  }
+			  } ,     
+			  error : function(res,error) { 
+			  	 alert("responseText="+res.responseText+";error="+error);     
+			  }     
+			});  
+			
+		
+	});
+	
+	
+	$('#btn_to2').on('click',function(){
+		window.location.href="pay/downPaytxtFile?type="+$('#type').val();
+	});
+});
+function logout() {
+   window.location.href = "logout";
+}
+</script>
+</head>
+<body>
+url:<input id="txt_url" type="text" value="service/findServiceItem" style="width:300px;">
+key:<input id="txt_key" type="text" value="itemCode">
+value:<input id="txt_value" type="text" value="1">
+<input type="button" id="btn_to" value="提交"></input>
+<br/>
+<input type="text" id="type" name="type" value="1"/>
+<input type="button" id="btn_to2" value="下载托收文件"></input>
+<br/>
+<form action="pay/uploadPaytxtFile2" method="post" enctype="multipart/form-data" >
+<input type="file" id="paytxtFile" width="100px" name="paytxtFile" multiple="multiple"  required="required"/>
+<input type="text" id="agency" name="agency" value="1"/>
+<input type="submit" id="btn_to3" value="上传金融中心/银盛托收文件"></input>
+<input type="button" id="btn_to4" value="退出" onclick="logout()"></input>
+</form></form>
+<br/>
+<form action="pay/addPrint" method="post">
+<input type="text" id="printType" name="printType" value="1"/>
+<input type="text" id="printFun" name="printFun" value="1"/>
+<input type="text" name="paymentIds" value="5"/>
+<input type="text"  name="paymentIds" value="6"/>
+<input type="text"  name="paymentIds" value="7"/>
+<input type="text"  name="paymentIds" value="8"/>
+<input type="submit" id="btn_to2" value="发票打印提交"></input>
+</form>
+
+</body>
+</html>

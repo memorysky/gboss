@@ -1,0 +1,33 @@
+#mysql1 
+jdbc_mysql1.driverClassName=com.mysql.jdbc.Driver
+jdbc_mysql1.url=jdbc:mysql://192.168.3.196:3306?useUnicode=true&amp;characterEncoding=UTF-8
+jdbc_mysql1.username=gboss
+jdbc_mysql1.password=123456
+jdbc_mysql1.alias=gboss_db
+jdbc_mysql1.maximum.connection.count=300
+jdbc_mysql1.minimum.connection.count=5
+jdbc_mysql1.statistics=1m,15m,1h,1d
+jdbc_mysql1.simultaneous.build.throttle=20
+jdbc_mysql1.houseKeepingSleepTime = 20000
+jdbc_mysql1.houseKeepingTestSql=select 1 from dual
+jdbc_mysql1.prototypeCount=5
+jdbc_mysql1.trace=true
+jdbc_mysql1.verbose=true
+jdbc_mysql1.maximumActiveTime = 900000
+
+#oracle1 暂时未用到
+jdbc_ora1.driverClassName=oracle.jdbc.driver.OracleDriver
+jdbc_ora1.url=jdbc:oracle:thin:@192.168.3.171:1521:orcl
+jdbc_ora1.username=gboss
+jdbc_ora1.password=a
+jdbc_ora1.alias=testo
+jdbc_ora1.maximum.connection.count=300
+jdbc_ora1.minimum.connection.count=5
+jdbc_ora1.statistics=1m,15m,1h,1d
+jdbc_ora1.simultaneous.build.throttle=20
+jdbc_ora1.houseKeepingSleepTime = 20000
+jdbc_ora1.houseKeepingTestSql=select 1 from dual
+jdbc_ora1.prototypeCount=5
+jdbc_ora1.trace=true
+jdbc_ora1.verbose=true
+jdbc_ora1.maximumActiveTime = 900000

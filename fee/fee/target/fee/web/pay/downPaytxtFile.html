@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>银行托收数据下载</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css" /> -->
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+</head>
+<body>
+	<div class="downPaytxtFile jfxtTab">
+	  <div class="bills">
+		<section id="downPaytxtFileContent">
+				      <b>特别说明：</b><br />
+				  <p>一、下载后生成的文件只可以做校验，不可以做任何修改，如发现生成的文件有误确需修改的，需要在计费系统中修改完成后重新下载。<br />
+				  二、下载生成文件并送托收机构，而托收机构没有返回文件，这一段时间内不得修改服务项、服务截止时间、托收频率、托收银行、帐户、帐号、合同号等与托收有关的信息，如确需修改请先做记录，待托收机构返回文件并上传至计费系统后再做处理。<br />
+				  三、下载生成文件并确定报送托收机构后应点击数据加锁，锁定数据库中的关键数据。<br />
+				<font color="red">
+				    四、2种托收方式：
+				    <br/>
+				   &nbsp; 1. 按固定日期托收，请在分公司银行账号设置页面设置固定托收日期，则下载的托收数据是服务截止日期为固定日期的托收数据；
+				   <br/>
+				   &nbsp; 2. 不是按固定日期托收，则下载的托收数据是服务截止日期为用户所选日期的托收数据。
+				   </font>
+				   </p>
+			 <div class="condition clearfix">
+		      <label for="" class="col-sm-2 control-label">数据锁：</label>
+		      <div class="col-sm-5">
+		        <button class="btn btn-default btn-sm" id="btn_lockadd">添加</button>
+		        <span id="spn_datalock" style="line-height: 24px;margin-left: 10px;">已加锁</span>
+		      </div>
+		    </div>
+			 <div class="condition clearfix">
+		      <label for="coditionTime" class="col-sm-2 control-label">条件：</label>
+		      <div class="col-sm-3">
+		        <input class="form-control input-sm" type="date" id="downLoadDate">
+		      </div>
+		      <div class="col-sm-3 input-group">
+		        <select class="form-control input-sm" id="times">
+		        	<option>1</option>
+		        	<option>2</option>
+		        	<option>3</option>
+		        	<option>4</option>
+		        	<option>5</option>
+		        	<option>6</option>
+		        	<option>7</option>
+		        	<option>8</option>
+		        	<option>9</option>
+		        </select>
+		        <span class="input-group-addon">批次</span>
+		      </div>
+		    </div>
+
+			<div class="condition clearfix" style="display: none">
+		      <label for="" class="col-sm-2 control-label">金融中心：</label>
+		      <div class="col-sm-5">
+		        <button class="btn btn-default btn-sm" id="btn_down1">下载交易文件</button>
+		        <button class="btn btn-default btn-sm" id="btn_down2">下载总结文件</button>
+		      </div>
+		    </div>
+			<div class="condition clearfix" style="display: none">
+		      <label for="" class="col-sm-2 control-label">银盛：</label>
+		      <div class="col-sm-5">
+		        <button class="btn btn-default btn-sm" id="btn_down3">下载交易文件</button>
+		        <button class="btn btn-default btn-sm" id="btn_down4">下载总结文件</button>
+		      </div>
+		    </div>
+			<div class="condition clearfix" style="display: none">
+		      <label for="" class="col-sm-2 control-label">中国银联：</label>
+		      <div class="col-sm-5">
+		        <button class="btn btn-default btn-sm" id="btn_down5">下载托收文件</button>
+		      </div>
+		    </div>
+		</section>
+	   </div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/common.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js" ></script>
+	<script type="text/javascript" src="../../js/web/pay/downPaytxtFile.js" ></script>
+</body>
+</html>

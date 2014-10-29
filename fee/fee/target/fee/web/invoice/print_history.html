@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>发票打印历史</title>
+</head>
+
+<body style="padding: 0px;margin: 0px;">
+ 		<section id="dgd_print_history" class="datagrid"></section>
+</body>
+<script type="text/javascript">
+    (function($){
+    	//开始日期、结束日期赋默认值
+ 	   var begeinDate =new Date();
+ 	   begeinDate.setDate(1);
+ 	   begeinDate=begeinDate.format('yyyy-MM-dd');
+ 	   
+ 	   var now =new Date().format('yyyy-MM-dd');
+    	var defaults = {
+   		        //width:  '160%',
+   		        width: 1140,
+   		        height: 300,
+   		        //url: '../../product/findParts',
+   		        url:'',
+	   		    datatype: "json",
+	 			usepager: true,
+	 			useRp: true,
+		        rownumbers:true,//序号
+   		        colModel : [
+						{
+					display: '客户名称',
+					name: 'customerName',
+					width: 102,
+					sortable: false
+				}, {
+					display: '车牌号码',
+					name: 'plateNo',
+					width: 102,
+					sortable: false
+				},{
+					display: '车载电话',
+					name: 'callLetter',
+					width: 102,
+					sortable: false
+				},{
+					display: '实收费用总额(元)',
+					name: 'realAmount',
+					width: 102,
+					sortable: false,
+				},{
+					display: '打印时间',
+					name: 'printTime',
+					width: 142,
+					sortable: false,
+					formatter: function(value, row) {
+						return value;
+					}
+				},{
+					display: '收件人',
+					name: 'addressee',
+					width: 82,
+					sortable: false,
+					formatter: function(value, row) {
+						return value;
+					}
+				}, {
+					display: '收件地址',
+					name: 'address',
+					width: 202,
+					sortable: false
+				}, {
+					display: '备注',
+					name: 'remark',
+					width: 122,
+					sortable: false
+				}
+   		        ],
+   		        buttons : [
+   		        ],
+   		        searchitems :[
+						{display:'开始日期',name:'startDate',type:'date',value:begeinDate},
+   		            	{display:'结束日期',name:'endDate',type:'date',value:now}
+   		        ]
+   		    };
+   		    $('#dgd_print_history').sgDatagrid(defaults);
+   		    
+    })(jQuery)
+    
+</script>
+</html>

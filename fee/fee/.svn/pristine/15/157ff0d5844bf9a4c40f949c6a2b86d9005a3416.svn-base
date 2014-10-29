@@ -1,0 +1,466 @@
+package com.chinagps.fee.controller;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ldap.objectClasses.CommonCompany;
+import ldap.oper.OpenLdap;
+import ldap.oper.OpenLdapManager;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.chinagps.fee.comm.SystemConst;
+import com.chinagps.fee.comm.SystemException;
+import com.chinagps.fee.entity.po.Datalock;
+import com.chinagps.fee.entity.po.Serviceitem;
+import com.chinagps.fee.entity.po.Subco;
+import com.chinagps.fee.service.PaytxtService;
+import com.chinagps.fee.service.SubcoService;
+import com.chinagps.fee.util.CreateExcel_PDF_CSV;
+import com.chinagps.fee.util.DateUtil;
+import com.chinagps.fee.util.FormatUtil;
+import com.chinagps.fee.util.LogOperation;
+import com.chinagps.fee.util.PageSelect;
+import com.chinagps.fee.util.StringUtils;
+import com.chinagps.fee.util.Utils;
+import com.chinagps.fee.util.Validation;
+import com.chinagps.fee.util.page.Page;
+
+/**
+ * @Package:com.chinagps.fee.controller
+ * @ClassName:PaytxtController
+ * @Description:托收文件记录控制器
+ * @author:zfy
+ * @date:2014-6-4 下午1:58:45
+ */
+@Controller
+@RequestMapping(value = "/pay")
+public class PaytxtController extends BaseController{
+	protected static final Logger LOGGER = LoggerFactory
+			.getLogger(PaytxtController.class);
+
+	@Autowired
+	@Qualifier("paytxtService")
+	private PaytxtService paytxtService;
+	
+	@Autowired
+	@Qualifier("subcoService")
+	private SubcoService subcoService; 
+	
+	@RequestMapping(value = "addUpdateDataLock")
+	@LogOperation(description = "修改锁状态", op_type = SystemConst.OPERATELOG_UPDATE, model_id = 30000)
+	public @ResponseBody
+	 HashMap<String, Object> addUpdateDataLock(
+			@RequestBody Datalock datalock,
+			 HttpServletRequest request) {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+		boolean flag = true;
+		String msg = SystemConst.OP_SUCCESS;
+		try {
+			//分公司ID
+			String companyId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_COMPANYID);
+			datalock.setSubcoNo(Long.valueOf(companyId));
+			paytxtService.addUpdateDataLock(datalock);
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			flag = false;
+			msg = SystemConst.OP_FAILURE;
+			e.printStackTrace();
+		}
+		resultMap.put(SystemConst.SUCCESS, flag);
+		resultMap.put(SystemConst.MSG, msg);
+		return resultMap;
+	}
+	/**
+	 * @Title:getDatalockByCompanyId
+	 * @Description:获得锁状态
+	 * @param datalock
+	 * @param request
+	 * @return
+	 * @throws
+	 */
+	@RequestMapping(value = "getDatalockByCompanyId")
+	public @ResponseBody
+	Datalock getDatalockByCompanyId(
+			@RequestBody Datalock datalock,
+			 HttpServletRequest request) {
+		try {
+			//分公司ID
+			String companyId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_COMPANYID);
+			// 下载时间=服务截止时间
+			Date donwLoadDate=datalock.getStamp();
+			//donwLoadDate.setDate(donwLoadDate.getDate()+1);
+			//批次
+			String times=datalock.getTimes();
+			// 类型：1：金融中心交易文件、2：金融中心总结文件、3：银盛交易文件、4：银盛总结文件、5：中国银联交易、总结文件
+			Integer type =datalock.getLocktag();
+			int agency=2;//托收机构：1=银盛, 2=金融中心(默认),3=中国银联
+			if(type!=null){
+				switch (type) {
+				case 1:
+					agency=2;
+					break;
+				case 2:
+					agency=2;
+					break;
+				case 3:
+					agency=1;
+					break;
+				case 4:
+					agency=1;
+					break;
+				case 5:
+					agency=3;
+					break;
+				default:
+					agency=2;
+					break;
+				}
+			}
+			
+						
+			//托收机构
+			datalock.setSubcoNo(Long.valueOf(companyId));
+			datalock=paytxtService.getDatalockByCompanyId(datalock);
+			
+			//如果已经加锁,判断该批次的文件是否存在
+			if(type!=null){
+				Map<String,Object> map=new HashMap<String, Object>();
+				map.put("flag", 1);//有效的
+				map.put("subcoNo", Long.valueOf(companyId));
+				map.put("agency", agency);
+				Subco subco=subcoService.getSubco(map);
+				String fileName=null;
+				String donwLoadDateStr=DateUtil.format(donwLoadDate,DateUtil.YMD);
+				//文件名
+				String year = donwLoadDateStr.substring(0,4); //下载总结文件的年份
+		        String month = donwLoadDateStr.substring(4,6); //下载总结文件的月份
+		        String day = donwLoadDateStr.substring(6,8);//下载总结文件的日期
+				if(datalock!=null && datalock.getLocktag()==1){
+		        	if (type == 1) {// 金融中心交易文件
+						fileName=subco.getAccountCode()+ SystemConst.ZERO2 + month + times;
+						//判断该文件是否已生成
+						map.put("txtName", fileName);
+						Map<String,Object> mapZj=paytxtService.getZjPaytxts(map);
+						if(Utils.isNotNullOrEmpty(mapZj.get("feeSum"))){
+							datalock.setLocktag(3);
+						}
+						}
+					else if (type == 2) {// 金融中心总结文件
+					} else if (type == 3) {// 银盛交易文件
+						fileName=subco.getAccountCode()+ SystemConst.ZERO2 + year + month + times;
+						
+						//判断该文件是否已生成
+						map.put("txtName", fileName);
+						Map<String,Object> mapZj=paytxtService.getZjPaytxts(map);
+						if(Utils.isNotNullOrEmpty(mapZj.get("feeSum"))){
+							datalock.setLocktag(3);
+						}
+					} else if (type == 4) {// 银盛总结文件
+					} else if (type == 5) {// 中国银联交易、总结文件
+						if(StringUtils.isNotBlank(year) && year.length()>2){
+							year=year.substring(2,year.length());
+						}
+						fileName=FormatUtil.leftAppendZero(subco.getAccountCode(),15)+ SystemConst.PAY_Q + year + month +day +SystemConst.PAY__+FormatUtil.leftAppendZero(times,3);
+						
+						//判断该文件是否已生成
+						map.put("txtName", fileName);
+						Map<String,Object> mapZj=paytxtService.getZjPaytxts(map);
+						if(Utils.isNotNullOrEmpty(mapZj.get("feeSum"))){
+							datalock.setLocktag(3);
+					}
+		        
+				}
+				}
+			}
+			if(datalock==null){
+				datalock=new Datalock();
+				datalock.setLocktag(0);
+			}
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			e.printStackTrace();
+		}
+		return datalock;
+	}
+	/**
+	 * @Title:findPaytxtPage
+	 * @Description:查询托收记录
+	 * @param pageSelect
+	 * @param request
+	 * @return
+	 * @throws SystemException
+	 */
+	@RequestMapping(value = "findPaytxtPage")
+	public @ResponseBody
+	Page<Map<String, Object>> findPaytxtPage(@RequestBody PageSelect<Map<String, Object>> pageSelect,
+			HttpServletRequest request) throws SystemException {
+		Page<Map<String, Object>> results = null;
+		try {
+			if (pageSelect != null) {
+				if (pageSelect.getFilter() == null) {
+					pageSelect.setFilter(new HashMap());
+				}
+			}
+				String userId = (String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_ID);
+				String companyId = (String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_COMPANYID);
+				String orgId=(String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_ORGID);
+				if (StringUtils.isNotBlank(userId)) {
+					OpenLdap openLdap = OpenLdapManager.getInstance();
+					//判断是否是分公司
+					int level=openLdap.getUserCompanyLevel(orgId);
+					if(level==0){//总部
+						
+					}else if(level==1){//分公司
+						pageSelect.getFilter().put("subcoNo", Long.valueOf(companyId));
+					}else if(level==2){//营业处
+						pageSelect.getFilter().put("subcoNo", Long.valueOf(companyId));
+					}
+				}
+			results = paytxtService.findPaytxtPage(pageSelect);
+
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			// 打印日志
+			e.printStackTrace();
+			// 同时把异常抛到前台
+			//throw new SystemException();
+		}
+		return results;
+	}
+	
+	@RequestMapping(value = "exportPaytxt")
+	public void exportPaytxt(HttpServletRequest request,HttpServletResponse response) throws SystemException {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("导出托收记录表 开始");
+		}
+		
+		try {
+			String[][] title = {{"序号","10"},{"客户名称","14"},{"银行账号类型","15"},{"银行账号","20"},{"银行编号","14"},{"银行客户名称","16"},{"托收合同","16"},{"托收合同(文件中)","16"},{"托收机构","12"},{"托收文件名","16"},{"记录数","12"},{"费用总额","13","1"},{"托收标记","16"},{"操作时间","28"},{"扣款时间","28"}};
+			
+			Map map=parseReqParam2(request);
+			
+			String companyId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_COMPANYID);
+			String orgId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_ORGID);
+			String userId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_ID);
+			OpenLdap openLdap = OpenLdapManager.getInstance();
+			if (StringUtils.isNotBlank(userId)) {
+				//判断是否是分公司
+				int level=openLdap.getUserCompanyLevel(orgId);
+				if(level==0){//总部
+					
+				}else if(level==1){//分公司
+					map.put("subcoNo", Long.valueOf(companyId));
+				}else if(level==2){//营业处
+					map.put("subcoNo", Long.valueOf(companyId));
+				}
+			}
+			
+			List<Map<String, Object>> results = paytxtService.findAllPaytxt(map);
+			List valueList = new ArrayList();
+			Map<String, Object> valueData = null;
+			String[] values = null;
+			int listLenth=results.size();
+			int titleLength=title.length;
+			int columnIndex=0;
+			for(int i=0; i<listLenth; i++){
+				values = new String[titleLength];
+				valueData = results.get(i);
+				columnIndex=0;
+				values[columnIndex]  = (i+1)+"";
+				columnIndex++;
+				values[columnIndex] = Utils.clearNull(valueData.get("customerName"));
+				columnIndex++;
+				values[columnIndex]  = SystemConst.BACCOUNT_TYPE.get(valueData.get("accountType"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("accountNo")+" ");
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("bankNo")+" ");
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("custName"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("contractNo"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("payContractNo"));
+				columnIndex++;
+				values[columnIndex] = SystemConst.AGENCY.get(valueData.get("agency"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("txtName"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("recordNum"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("feeSum"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("payTagStr"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("stamp"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("payTime"));
+				valueList.add(values);
+			}
+			//获得分公司中英文名称
+			CommonCompany commonCompany =  openLdap.getCompanyById(companyId);
+	
+			CreateExcel_PDF_CSV.createExcel(valueList, response, "托收情况报表", title,commonCompany.getCnfullname(),commonCompany.getEnfullname(),true);
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			e.printStackTrace();
+		}
+		
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("导出托收记录表 结束");
+		}
+	}
+	
+	@RequestMapping(value = "findPaytxtDtPage")
+	public @ResponseBody
+	Page<Map<String, Object>> findPaytxtDtPage(@RequestBody PageSelect<Map<String, Object>> pageSelect,
+			HttpServletRequest request) throws SystemException {
+		Page<Map<String, Object>> results = null;
+		try {
+			if (pageSelect != null) {
+				if (pageSelect.getFilter() == null) {
+					pageSelect.setFilter(new HashMap());
+				}
+			}
+				String userId = (String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_ID);
+				String companyId = (String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_COMPANYID);
+				String orgId=(String) request.getSession().getAttribute(
+						SystemConst.ACCOUNT_ORGID);
+				if (StringUtils.isNotBlank(userId)) {
+					OpenLdap openLdap = OpenLdapManager.getInstance();
+					//判断是否是分公司
+					int level=openLdap.getUserCompanyLevel(orgId);
+					if(level==0){//总部
+						
+					}else if(level==1){//分公司
+						pageSelect.getFilter().put("subcoNo", Long.valueOf(companyId));
+					}else if(level==2){//营业处
+						pageSelect.getFilter().put("subcoNo", Long.valueOf(companyId));
+					}
+				}
+			results = paytxtService.findPaytxtDtPage(pageSelect);
+
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			// 打印日志
+			e.printStackTrace();
+			// 同时把异常抛到前台
+			//throw new SystemException();
+		}
+		return results;
+	}
+	@RequestMapping(value = "exportPaytxtDt")
+	public void exportPaytxtDt(HttpServletRequest request,HttpServletResponse response) throws SystemException {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("导出托收明细表 开始");
+		}
+		
+		try {
+           
+			String[][] title = {{"序号","10"},{"客户名称","14"},{"车牌号码","14"},{"车载电话","14"},{"开通日期","14"},{"费用总额","13","1"},{"服务费","13"},{"服务截止时间","16"},{"SIM卡流量费","13"},{"SIM卡截止时间","16"},{"盗抢险费","13"},{"盗抢险截止时间","16"},{"网查费","13"},{"网查截止时间","16"},{"托收文件名","16"},{"操作时间","28"}};
+			
+			Map map=parseReqParam2(request);
+			
+			String companyId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_COMPANYID);
+			String orgId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_ORGID);
+			String userId = (String) request.getSession().getAttribute(
+					SystemConst.ACCOUNT_ID);
+			OpenLdap openLdap = OpenLdapManager.getInstance();
+			if (StringUtils.isNotBlank(userId)) {
+				//判断是否是分公司
+				int level=openLdap.getUserCompanyLevel(orgId);
+				if(level==0){//总部
+					
+				}else if(level==1){//分公司
+					map.put("subcoNo", Long.valueOf(companyId));
+				}else if(level==2){//营业处
+					map.put("subcoNo", Long.valueOf(companyId));
+				}
+			}
+			
+			List<Map<String, Object>> results = paytxtService.findAllPaytxtDt(map);
+			List valueList = new ArrayList();
+			Map<String, Object> valueData = null;
+			String[] values = null;
+			int listLenth=results.size();
+			int titleLength=title.length;
+			int columnIndex=0;
+			for(int i=0; i<listLenth; i++){
+				values = new String[titleLength];
+				valueData = results.get(i);
+				columnIndex=0;
+				values[columnIndex]  = (i+1)+"";
+				columnIndex++;
+				values[columnIndex] = Utils.clearNull(valueData.get("customerName"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("plateNo"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("callLetter"))+" ";
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("serviceDate"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("feeSum")+" ");
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("amount1"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("sdate1"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("amount2"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("sdate2"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("amount3"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("sdate3"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("amount4"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("sdate4"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("txtName"));
+				columnIndex++;
+				values[columnIndex]  = Utils.clearNull(valueData.get("stamp"));
+				valueList.add(values);
+			}
+			//获得分公司中英文名称
+			CommonCompany commonCompany =  openLdap.getCompanyById(companyId);
+	
+			CreateExcel_PDF_CSV.createExcel(valueList, response, "托收失败报表", title,commonCompany.getCnfullname(),commonCompany.getEnfullname(),true);
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
+			e.printStackTrace();
+		}
+		
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("导出托收明细表 结束");
+		}
+	}
+}
+

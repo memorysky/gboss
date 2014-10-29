@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>补打保存</title>
+</head>
+<body>
+	<form id="payAccount_add" class="form-horizontal" style="width: 90%">
+ <input type="hidden" id="reprintId" name="reprintId">
+  <fieldset>
+    <div class="form-group">
+      <label for="customerName_form" class="col-md-4 col-sm-4 control-label">客户名称</label>
+      <div class="col-md-8 col-sm-8 searchDis">
+        <input type="text" id="customerName_form" name="customerName_form" class="form-control" required="required" autocomplete="on">
+        <input type="hidden" id="customerId_form" name="customerId_form">
+		<ul class="show_list" id="customerlist_form" style="left:5%"></ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="vehicleId_form" class="col-md-4 col-sm-4 control-label">车牌号码</label>
+      <div class="col-md-8 col-sm-8 searchDis">
+        <input type="text" id="vehicleNum_form" name="vehicleNum_form" class="form-control"  required="required" autocomplete="on">
+        <input type="hidden"  id="vehicleId_form" name="vehicleId_form">
+		<ul class="show_list" id="vehiclelist_form" style="left:5%"></ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="unitNum_form" class="col-md-4 col-sm-4 control-label">车载号码</label>
+      <div class="col-md-8 col-sm-8 searchDis">
+        <input type="text" id="unitNum_form" name="unitNum_form"  class="form-control"  required="required" autocomplete="on">
+        <input type="hidden" id="unitId_form" name="unitId_form">
+		<ul class="show_list" id="unitlist_form" style="left:5%"></ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="printTime" class="col-md-4 col-sm-4 control-label">要求打印月数</label>
+      <div class="col-md-8 col-sm-8">
+        <input type="month" id="printTime" required="true" class="form-control" placeholder="要求打印月数" required="required">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="isDel" class="col-md-4 col-sm-4 control-label">是否删除</label>
+      <div class="col-md-8 col-sm-8">
+           <select id="isDel" class="form-control">
+          <option value="1">是</option>
+          <option selected="selected" value="0">否</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+</form>
+<script type="text/javascript" src="../../js/sgAutoComplete.min.js"></script>
+<script type="text/javascript">
+(function($) {
+var customerlist_form={};
+var vehiclelist_form={};
+var unitlist_form={};
+//用户名称
+$("#customerName_form").sgAutoComplete({
+	  bId:'customerId_form',//绑定的id
+	  bUList:'customerlist_form',//绑定的ul list
+	  url:'../../ba/getCustomers',
+      likeAttr:'customer_name',//模糊匹配的字段名
+      backLi:{name:'customer_id',text:'customer_name'},
+      queryBack:function(){
+      }
+});
+//焦点失去时，触发enter事件
+$("#customerName_form").on('blur',function(){
+	if($(this).val()){
+		$("#customerName_form").trigger('keyup',13);
+	}
+});
+//车牌号
+$("#vehicleNum_form").sgAutoComplete({
+	  bId:'vehicleId_form',//绑定的id
+	  bUList:'vehiclelist_form',//绑定的ul list
+	  url:'../../ba/getVehicles',
+      likeAttr:'plate_no',//模糊匹配的字段名
+      backLi:{name:'vehicle_id',text:'plate_no'},
+      queryBack:function(){
+      }
+});
+//焦点失去时，触发enter事件
+$("#vehicleNum_form").on('blur',function(){
+	if($(this).val()){
+		$("#vehicleNum_form").trigger('keyup',13);
+	}
+});
+ //车台号码
+$("#unitNum_form").sgAutoComplete({
+	  bId:'unitId_form',//绑定的id
+	  bUList:'unitlist_form',//绑定的ul list
+	  url:'../../ba/getUnits',
+      likeAttr:'call_letter',//模糊匹配的字段名
+      backLi:{name:'unit_id',text:'call_letter'},
+      queryBack:function(){
+      }
+});
+//焦点失去时，触发enter事件
+$("#unitNum_form").on('blur',function(){
+	if($(this).val()){
+	 	$("#unitNum_form").trigger('keyup',13);
+	}
+});
+})(jQuery);	
+</script>
+</body>
+</html>

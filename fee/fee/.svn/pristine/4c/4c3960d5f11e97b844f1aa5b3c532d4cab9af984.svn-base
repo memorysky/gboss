@@ -1,0 +1,148 @@
+package com.chinagps.fee.service;
+
+import java.sql.Date;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.hibernate.Session;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.chinagps.fee.comm.SystemException;
+import com.chinagps.fee.entity.po.Datalock;
+import com.chinagps.fee.entity.po.Paytxt;
+import com.chinagps.fee.util.PageSelect;
+import com.chinagps.fee.util.page.Page;
+
+
+/**
+ * @Package:com.chinagps.fee.service
+ * @ClassName:PaytxtService
+ * @Description:托收文件业务层接口
+ * @author:zfy
+ * @date:2014-5-21 下午4:24:28
+ */
+public interface PaytxtService extends BaseService{
+	/**
+	 * @Title:findPaytxts
+	 * @Description:查询托收文件记录
+	 * @param conditionMap
+	 * @return
+	 * @throws SystemException
+	 */
+	public List<Paytxt> findPaytxts(Map<String, Object> conditionMap)throws SystemException;
+	/**
+	 * @Title:findPaytxts
+	 * @Description:分页查询托收文件记录
+	 * @param conditionMap
+	 * @param pageNo
+	 * @param pageSize
+	 * @return
+	 * @throws SystemException
+	 */
+	public List<Paytxt> findPaytxts(Map<String, Object> conditionMap, int pageNo, int pageSize)throws SystemException;
+
+	/**
+	 * @Title:getMaxTxtName
+	 * @Description:获得最新的下载文件的文件名
+	 * @param conditionMap
+	 * @return
+	 * @throws SystemException
+	 */
+	public String getMaxTxtName(Map<String, Object> conditionMap)throws SystemException;
+	/**
+	 * @Title:findZjPaytxts
+	 * @Description:查询托收文件记录总金额、总户数，用于生成总结文件
+	 * @param conditionMap
+	 * @return
+	 * @throws SystemException
+	 */
+	public  Map<String,Object> getZjPaytxts(Map<String, Object> conditionMap)throws SystemException;
+	
+	/**
+	 * @Title:addPaytxts
+	 * @Description:用存过批量生成托收文件记录
+	 * @param subcoNo
+	 * @param agency
+	 * @param fileName
+	 * @param opId
+	 * @param endDate
+	 * @return
+	 * @throws SystemException
+	 */
+	public long addPaytxts(final long subcoNo,final int agency ,final String fileName,final long opId,final Date endDate)throws SystemException;
+	
+	/**
+	 * @Title:getMaxFileTimesOfToday
+	 * @Description:获得某个托收机构当天文件最大批次号
+	 * @param conditionMap
+	 * @return
+	 * @throws SystemException
+	 */
+	public String getMaxFileTimesOfToday(Map<String, Object> conditionMap)throws SystemException;
+	
+	/**
+	 * @Title:upPaytxt
+	 * @Description:修改托收文件记录，上传回来
+	 * @param map
+	 * @return
+	 * @throws
+	 */
+	public int uploadPaytxt(Session session,Map<String, Object> map) throws SystemException;
+	
+	/**
+	 * @Title:addUpdateDataLock
+	 * @Description:设置锁开启、关闭状态
+	 * @param datalock
+	 * @return
+	 * @throws SystemException
+	 */
+	public void addUpdateDataLock(Datalock datalock)throws SystemException;
+	/**
+	 * @Title:findPaytxtPage
+	 * @Description:分页查询托收记录
+	 * @param pageSelect
+	 * @return
+	 * @throws SystemException
+	 */
+	public Page<Map<String, Object>> findPaytxtPage(PageSelect<Map<String, Object>> pageSelect) throws SystemException;
+	/**
+	 * @Title:findAllPaytxt
+	 * @Description:查询托收记录
+	 * @param map
+	 * @return
+	 * @throws SystemException
+	 */
+	public List<Map<String, Object>> findAllPaytxt(Map<String, Object> map) throws SystemException;
+	/**
+	 * @Title:getDatalockByCompanyId
+	 * @Description:获得数据锁状态
+	 * @param datalock
+	 * @return
+	 * @throws SystemException
+	 */
+	public Datalock getDatalockByCompanyId(Datalock datalock) throws Exception;
+	/**
+	 * @Title:uploadPaytxt1
+	 * @Description:上传金融中心、银盛的交易、总结文件
+	 * @param paytxtFiles
+	 * @param agency
+	 * @return
+	 * @throws Exception
+	 */
+	public void uploadPaytxt1(List<MultipartFile> paytxtFiles,int agency,HttpServletRequest request,HttpServletResponse response)throws Exception;
+	
+	/**
+	 * @Title:uploadPaytxt2
+	 * @Description:上传银联托收文件
+	 * @param paytxtFiles
+	 * @param agency
+	 * @return
+	 * @throws Exception
+	 */
+	public void uploadPaytxt2(List<MultipartFile> paytxtFiles,HttpServletRequest request,HttpServletResponse response)throws Exception;
+
+}
+

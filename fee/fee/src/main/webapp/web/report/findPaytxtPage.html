@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>托收记录查询</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jfxt.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/window.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pup.min.css">
+<style type="text/css">
+.findPtP-down{
+    overflow-x: hidden;
+}
+</style>
+</head>
+<body>
+	<div class="findPtP jfxtTab">
+	  <div class="bills">
+		<section id="findPtPContent">
+			<form class="findPtP-up form-inline">
+				<div class="form-group">
+				         <label>
+				            	操作时间段：
+				         </label>
+				        <input type="date" class="form-control" id="startDate" name="startDate">
+				        <input type="date" class="form-control" id="endDate" name="endDate">
+				</div>
+				<div class="form-group searchDis">
+					<input type="text" class="form-control" autocomplete="on" name="customerName" id="customerName" placeholder="请输入客户名称">
+					<input type="hidden"  class="" value="" name="customerId" id="customerId">
+					<ul class="show_list" id="customerlist"></ul>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="accountNo" id="accountNo"  placeholder="请输入银行账号">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="payContractNo" id="payContractNo"  placeholder="请输入托收合同">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="txtName" id="txtName"  placeholder="请输入托收文件名">
+				</div>
+				<div class="form-group">
+					<select id="agency"><option value="">请选择托收机构---</option><option value="1">银盛</option><option value="2">金融中心</option><option value="3">银联</option></select>
+				</div>
+				<div class="form-group">
+					<select id="payTag"><option value="">请选择托收结果---</option><option value="X">送盘</option><option value="Y">托收成功</option><option value="N">托收失败</option></select>
+				</div>
+				<!-- <input type="text" class="form-control" autocomplete="on" name="vehicleNum" id="vehicleNum" list="vehiclelist" placeholder="请输入车牌id">
+				<input type="hidden"  class="" value="" name="vehicleId" id="vehicleId">
+				<datalist class="" id="vehiclelist"></datalist>
+				<input type="text" class="form-control" autocomplete="on" name="unitNum" id="unitNum" list="unitlist" placeholder="请输入车台号id">
+				<input type="hidden"  class="" value="" name="unitId" id="unitId">
+				<datalist class="" id="unitlist"></datalist>	 -->
+				<button type="submit" class="btn btn-default" id="query">查询</button>
+				<button type="button" class="btn btn-default" id="btn_export">导出Excel</button>
+			</form>
+		    <div class="findPtP-down">
+
+		    </div>
+		</section>
+	   </div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/index.min.js"></script>
+	<script type="text/javascript" src="../../js/web/report/queryPtP.js"></script>
+	<script type="text/javascript" src="../../js/window.min.js"></script>
+	<script type="text/javascript" src="../../js/pup.min.js"></script>
+	<!-- <script type="text/javascript" src="../../js/sgAutoComplete.min.js"></script> -->
+	<script type="text/javascript" src="../../js/web/report/findPaytxtPage.js"></script>
+</body>
+</html>

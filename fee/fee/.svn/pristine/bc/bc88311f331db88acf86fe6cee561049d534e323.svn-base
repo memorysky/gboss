@@ -1,0 +1,309 @@
+package com.chinagps.fee.dao.impl;
+
+import java.math.BigInteger;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+import org.hibernate.Query;
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.transform.Transformers;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
+
+import com.chinagps.fee.comm.SystemConst;
+import com.chinagps.fee.comm.SystemException;
+import com.chinagps.fee.dao.PaytxtDao;
+import com.chinagps.fee.entity.po.Paytxt;
+import com.chinagps.fee.util.StringUtils;
+import com.chinagps.fee.util.Utils;
+import com.chinagps.fee.util.page.PageUtil;
+
+/**
+ * @Package:com.chinagps.fee.dao.impl
+ * @ClassName:PaytxtDaoImp
+ * @Description:托收文件记录持久层实现类
+ * @author:zfy
+ * @date:2014-5-21 下午4:26:25
+ */
+@Repository("paytxtDao")  
+public class PaytxtDaoImp extends BaseDaoImpl implements PaytxtDao {
+	protected static final Logger logger = LoggerFactory.getLogger(PaytxtDaoImp.class);
+
+	@Override
+	public List<Paytxt> findPaytxts(Session session,
+			Map<String, Object> conditionMap,int pageNo, int pageSize) throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append("from Paytxt as p");
+		sb.append(" where 1=1");
+		if(Utils.isNotNullOrEmpty(conditionMap.get("txtName"))){
+			sb.append(" and p.txtName='").append(conditionMap.get("txtName")).append("'");
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("subcoNo"))){
+			sb.append(" and p.subcoNo=").append(conditionMap.get("subcoNo"));
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("agency"))){
+			sb.append(" and p.agency=").append(conditionMap.get("agency"));;
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("payContractNo"))){
+			//sb.append("and p.payContractNo='").append(conditionMap.get("payContractNo")).append("'");
+			sb.append("and p.payContractNo like '%").append(conditionMap.get("payContractNo")).append("%'");
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("bankNo"))){
+			sb.append("and p.bankNo like '%").append(StringUtils.replaceSqlKey(conditionMap.get("bankNo"))).append("%'");
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("accountNo"))){
+			sb.append("and p.accountNo like '%").append(StringUtils.replaceSqlKey(conditionMap.get("accountNo"))).append("%'");
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("idcard"))){
+			sb.append("and p.idcard='").append(conditionMap.get("idcard")).append("'");
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("accountType"))){
+			sb.append("and p.accountType=").append(conditionMap.get("accountType"));
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("feeSum"))){
+			sb.append("and p.feeSum=").append(conditionMap.get("feeSum"));
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("payTag")) && Utils.isNullOrEmpty(conditionMap.get("notContainsPayTag"))){//还未返回,默认值为X
+			sb.append(" and p.payTag='").append(conditionMap.get("payTag")).append("'");;
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("notPayTag"))){
+			sb.append(" and p.payTag<>'").append(conditionMap.get("notPayTag")).append("'");
+		}
+		if(session==null){
+			session=mysql1SessionFactory.getCurrentSession();
+		}
+		Query query =session.createQuery(sb.toString()); 
+		if (pageNo>0 && pageSize>0) {
+			query.setFirstResult(PageUtil.getPageStart(pageNo, pageSize));
+			query.setMaxResults(pageSize);
+		}
+		/*query.addScalar("paytxt_id",LongType.INSTANCE);
+		query.addScalar("subco_no",StringType.INSTANCE);
+		query.addScalar("customer_id",StringType.INSTANCE);
+		query.addScalar("txt_name",StringType.INSTANCE);
+		query.addScalar("consignorgan_id",StringType.INSTANCE);
+		query.addScalar("type",IntegerType.INSTANCE);
+		query.addScalar("price",DoubleType.INSTANCE);
+		query.addScalar("issell",IntegerType.INSTANCE);
+		
+		query.addScalar("status",IntegerType.INSTANCE);
+		query.addScalar("userId",StringType.INSTANCE);
+		query.addScalar("remark",StringType.INSTANCE);
+		query.addScalar("orderNo",IntegerType.INSTANCE);
+		query.addScalar("oftenId",LongType.INSTANCE);*/
+		//query.setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
+		 //即使全局打开了查询缓存，此处也是必须的  
+	   // query.setCacheable(true); 
+		return query.list();
+	}
+
+	@Override
+	public Map<String,Object> getZjPaytxts(Map<String, Object> conditionMap)
+			throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append(" select sum(p.feeSum) as feeSum,count(*) as recordNum");
+		sb.append(" from Paytxt as p");
+		sb.append(" where 1=1");
+		if(Utils.isNotNullOrEmpty(conditionMap.get("txtName"))){
+			sb.append(" and p.txtName='").append(conditionMap.get("txtName")).append("'");
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("subcoNo"))){
+			sb.append(" and p.subcoNo=").append(conditionMap.get("subcoNo"));
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("agency"))){
+			sb.append(" and p.agency=").append(conditionMap.get("agency"));;
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("payTag"))){//还未返回,默认值为X
+			sb.append(" and p.payTag='").append(conditionMap.get("payTag")).append("'");;
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("notPayTag"))){
+			sb.append(" and p.payTag<>'").append(conditionMap.get("notPayTag")).append("'");
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("txtNameLike"))){
+			//是否是本月最新的托收文件
+			sb.append(" and not exists(select 1 from Paytxt p2 where p2.txtName like '%").append(conditionMap.get("txtNameLike")).append("%' and p2.stamp > p.stamp");
+			if(Utils.isNotNullOrEmpty(conditionMap.get("subcoNo"))){
+				sb.append(" and p2.subcoNo=").append(conditionMap.get("subcoNo"));
+			}
+			if(Utils.isNotNullOrEmpty(conditionMap.get("agency"))){
+				sb.append(" and p2.agency=").append(conditionMap.get("agency"));;
+			}
+			if(Utils.isNotNullOrEmpty(conditionMap.get("payTag"))){//还未返回,默认值为X
+				sb.append(" and p2.payTag='").append(conditionMap.get("payTag")).append("'");;
+			}
+			if(Utils.isNotNullOrEmpty(conditionMap.get("notPayTag"))){
+				sb.append(" and p2.payTag<>'").append(conditionMap.get("notPayTag")).append("'");
+			}
+			sb.append(" )");
+		}
+		Query query = mysql1SessionFactory.getCurrentSession().createQuery(sb.toString()); 
+		query.setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
+		return (Map<String,Object>)query.uniqueResult();
+	}
+
+	@Override
+	public String getMaxFileTimesOfToday(Map<String, Object> conditionMap)
+			throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append(" select max(right(txt_name,3))");
+		sb.append(" from t_fee_paytxt as p");
+		sb.append(" where 1=1");//当天
+		if(Utils.isNotNullOrEmpty(conditionMap.get("subcoNo"))){
+			sb.append(" and p.subco_no=").append(conditionMap.get("subcoNo"));
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("agency"))){
+			sb.append(" and p.agency=").append(conditionMap.get("agency"));;
+		}
+		if(Utils.isNotNullOrEmpty(conditionMap.get("today"))){
+			sb.append(" and date_format(stamp,'%Y-%m-%d')=curdate()");;
+			 
+		}
+		Query query = mysql1SessionFactory.getCurrentSession().createSQLQuery(sb.toString()); 
+		return (String)query.uniqueResult();
+	}
+
+	@Override
+	public int updateServiceTime(Long unitId,int feeTypeId,String endDate)throws SystemException {
+		if(unitId!=null){
+			StringBuffer sb=new StringBuffer();
+			sb.append(" update t_fee_info s set");
+			sb.append("  s.fee_sedate='").append(endDate).append("'");
+			sb.append(" where unit_id=").append(unitId);
+			sb.append(" and feetype_id=").append(feeTypeId);
+			Query query = mysql1SessionFactory.getCurrentSession().createSQLQuery(sb.toString());  
+			return query.executeUpdate();
+		}else{
+			return 0;
+		}
+	}
+
+	@Override
+	public List<Map<String, Object>> findPaytxts(
+			Map<String, Object> conditionMap, String order, boolean isDesc,
+			int pageNo, int pageSize) throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append("select p.paytxt_id paytxtId,p.subco_no subcoNo,p.customer_id customerId,");
+		sb.append("c.customer_name customerName, p.txt_name txtName,p.agency,p.account_type accountType,");
+		sb.append("p.bank_no bankNo,p.cust_name custName,p.idcard,p.account_no accountNo,");
+		sb.append("p.contract_no contractNo,p.pay_contract_no payContractNo,p.record_num recordNum,");
+		sb.append("p.fee_sum feeSum,p.stamp,p.op_id opId,");
+		sb.append("p.pay_tag payTag,p.pay_time payTime,");
+		sb.append(" (select v.sname from t_sys_value v where v.stype=if(p.agency=3,3021,3020) and v.svalue=p.pay_tag) as payTagStr");
+		sb.append(" from t_fee_paytxt p inner join t_ba_customer c on p.customer_id=c.customer_id");
+		 sb = getCon4Paytxts(sb,conditionMap);
+		if (StringUtils.isNotBlank(order)) {
+			sb.append(" order by ").append(order);
+			if (isDesc) {
+				sb.append(" desc");
+			} else {
+				sb.append(" asc");
+			}
+		}else{
+			sb.append(" order by p.stamp desc");
+		}
+		if (pageNo>0 && pageSize>0) {
+			sb.append(" limit ");
+			sb.append(PageUtil.getPageStart(pageNo, pageSize));
+			sb.append(",");
+			sb.append(pageSize);
+		}
+		SQLQuery query=mysql1SessionFactory.getCurrentSession().createSQLQuery(sb.toString());
+		query.setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
+		return query.list();
+	}
+
+	@Override
+	public int countPaytxts(Map<String, Object> conditionMap)
+			throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append(" select count(p.paytxt_id)");
+		sb.append(" from t_fee_paytxt p inner join t_ba_customer c on p.customer_id=c.customer_id");
+		sb = getCon4Paytxts(sb,conditionMap);
+		SQLQuery query=mysql1SessionFactory.getCurrentSession().createSQLQuery(sb.toString());
+		return ((BigInteger)query.uniqueResult()).intValue();
+	}
+	 private StringBuffer getCon4Paytxts(StringBuffer sb,Map conditionMap){
+			sb.append(" where 1=1 ");
+			if(conditionMap!=null){
+				if(Utils.isNotNullOrEmpty(conditionMap.get("startDate")) && Utils.isNotNullOrEmpty(conditionMap.get("endDate"))){//付费开始、结束时间
+					sb.append(" and p.stamp between '").append(conditionMap.get("startDate"));
+					sb.append(" 00:00:00' and '").append(conditionMap.get("endDate")).append(" 23:59:59'");
+				}
+				if(Utils.isNotNullOrEmpty(conditionMap.get("agency"))){
+					sb.append(" and p.agency=").append(conditionMap.get("agency"));
+				}
+				if (Utils.isNotNullOrEmpty(conditionMap.get("customerId"))) {//客户ID
+					sb.append(" and p.customer_id=").append(conditionMap.get("customerId"));
+				}
+				if (Utils.isNotNullOrEmpty(conditionMap.get("subcoNo"))) {//分公司ID
+					sb.append(" and p.subco_no=").append(conditionMap.get("subcoNo"));
+				}
+				if (Utils.isNotNullOrEmpty(conditionMap.get("txtName"))) {//托收文件名
+					sb.append(" and p.txt_name like '%").append(StringUtils.replaceSqlKey(conditionMap.get("txtName"))).append("%'");
+				}
+				if (Utils.isNotNullOrEmpty(conditionMap.get("payContractNo"))) {//托收合同号
+					sb.append(" and (p.pay_contract_no like '%").append(StringUtils.replaceSqlKey(conditionMap.get("payContractNo"))).append("%'");
+					sb.append(" or p.contract_no like '%").append(StringUtils.replaceSqlKey(conditionMap.get("payContractNo"))).append("%' )");
+				}
+				if (Utils.isNotNullOrEmpty(conditionMap.get("accountNo"))) {//银行账号
+					sb.append(" and p.account_no like '%").append(StringUtils.replaceSqlKey(conditionMap.get("accountNo"))).append("%'");
+				}
+				if (Utils.isNotNullOrEmpty(conditionMap.get("payTag"))) {//托收返回码
+					String payTag=Utils.clearNull(conditionMap.get("payTag"));
+					if(SystemConst.PAY_TAG_DEFAULT.equals(payTag)){
+						sb.append(" and p.pay_tag='").append(payTag).append("'");
+					}else if(SystemConst.PAY_Y1.equals(payTag)){
+						sb.append(" and p.pay_tag in ('"+SystemConst.PAY_Y1+"','"+SystemConst.ZERO2+"')");
+					}else {
+						sb.append(" and p.pay_tag not in ('"+SystemConst.PAY_TAG_DEFAULT+"','"+SystemConst.PAY_Y1+"','"+SystemConst.ZERO2+"')");
+					}
+					//sb.append(" and p.pay_tag='").append(conditionMap.get("payTag")).append("'");
+				}
+				if (Utils.isNotNullOrEmpty(conditionMap.get("customerName"))) {//客户
+					sb.append(" and c.customer_name like '%").append(StringUtils.replaceSqlKey(conditionMap.get("customerName"))).append("%'");
+				}
+			}
+			return sb;
+	}
+
+	@Override
+	public String getMaxTxtName(Map<String, Object> conditionMap)
+			throws SystemException {
+		StringBuffer sb=new StringBuffer();
+		sb.append(" select distinct t1.txt_name from t_fee_paytxt t1 where ");
+		sb.append("t1.stamp=(select max(t2.stamp )from t_fee_paytxt t2 where 1=1");
+		if(conditionMap!=null){
+			if (Utils.isNotNullOrEmpty(conditionMap.get("customerId"))) {//客户ID
+				sb.append(" and t2.customer_id=").append(conditionMap.get("customerId"));
+			}
+			if(Utils.isNotNullOrEmpty(conditionMap.get("agency"))){
+				sb.append(" and t2.agency=").append(conditionMap.get("agency"));
+			}
+		}
+		sb.append(")");
+		SQLQuery query=mysql1SessionFactory.getCurrentSession().createSQLQuery(sb.toString());
+		return ((String)query.uniqueResult());
+	
+	}
+
+	@Override
+	public int updateServiceTime(Session session,Long paytxtId) throws SystemException {
+		if(paytxtId!=null){
+			StringBuffer sb=new StringBuffer();
+			sb.append(" update t_fee_info s inner join t_fee_bill b set s.fee_sedate=b.e_date ");
+			sb.append(" where s.unit_id=b.unit_id and s.feetype_id=b.feetype_id ");
+			sb.append(" and b.paytxt_id=").append(paytxtId);
+			if(session==null){
+				session=mysql1SessionFactory.getCurrentSession();
+			}
+			Query query = session.createSQLQuery(sb.toString());  
+			return query.executeUpdate();
+		}else{
+			return 0;
+		}
+	}
+}
+
